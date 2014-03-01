@@ -10,8 +10,8 @@ Develop an mobile application where emergency medical responders can collect imm
 The objective of this application is to reduce hospital mortality rates by improving the speed and quality of communication between medical emergency responders and hospitals in order to enable better preparation and care for the patient.  The data will not be stored on the user’s personal mobile device so that HIPAA violations are safely avoided.
 
 ##### Platform/Environment:
-iOS (Stretch: also Android and Windows)
-Web with Java-based backend
+- iOS (Stretch: also Android and Windows)
+- Web with Java-based backend
 
 ##### Languages: 
 | Language  | Alexia Newgord | Mark Lohaus | Matthew Zhu | Nick Casalbore |
@@ -24,21 +24,21 @@ Web with Java-based backend
 |Objective-C|Beginner        |Know nothing |Intermediate |                |
 
 ##### Functionality: 
-Emergency responder logs into mobile application
-Emergency responder takes image(s) with mobile device
-Emergency responder checks applicable fields in mobile application form
-Emergency responder add comments in mobile application form
-Emergency responder submits reports through mobile application
-Hospital logs in via website
-Hospital receives reports/images via website
-Admin logs in via website or mobile application
-Admin adds/removes users via backend database
-Admin customizes fields of the form
+- Emergency responder logs into mobile application
+- Emergency responder takes image(s) with mobile device
+- Emergency responder checks applicable fields in mobile application form
+- Emergency responder add comments in mobile application form
+- Emergency responder submits reports through mobile application
+- Hospital logs in via website
+- Hospital receives reports/images via website
+- Admin logs in via website or mobile application
+- Admin adds/removes users via backend database
+- Admin customizes fields of the form
 
 ##### Stretch Functionality:
-Emergency responder or the emergency room can suggest priority level
-System suggests equipment/personnel to prep for patient
-Emergency responder may use Android, iPhone, and Windows mobile devices
-Emergency responders may use mobile phone to mobile phone communication in the case that a police officer arrives at the scene first and needs to communicate with the paramedics/EMTs
-Emergency responder may send report to hospital of choice
-Hospital may respond or confirm receipt
+- Emergency responder or the emergency room can suggest priority level
+- System suggests equipment/personnel to prep for patient
+- Emergency responder may use Android, iPhone, and Windows mobile devices
+- Emergency responders may use mobile phone to mobile phone communication in the case that a police officer arrives at the scene first and needs to communicate with the paramedics/EMTs
+- Emergency responder may send report to hospital of choice
+- Hospital may respond or confirm receipt
