@@ -1,7 +1,7 @@
 CSCI4448: OOAD_Project1 Spring 2014
 =============
 
-#### Members: Alexia Newgord, Mark Lohaus, Matthew Zhu, Nick Casalbore
+#### Members: Alexia Newgord, Mark Lohaus
 #### Title: “Snap for Life” mobile app and web project
 
 ##### Description: 
@@ -14,14 +14,14 @@ The objective of this application is to reduce hospital mortality rates by impro
 - Web with Java-based backend
 
 ##### Languages: 
-| Language  | Alexia Newgord | Mark Lohaus | Matthew Zhu | Nick Casalbore |
-| --------- |:--------------:|:-----------:|:-----------:|:--------------:|
-|PHP        |Intermediate    |Expert       |Intermediate |Expert          |
-|Java       |Intermediate    |Intermediate |Expert       |Beginner        |
-|JavaScript |Beginner        |Expert       |Beginner     |                |
-|HTML       |Beginner        |Expert       |Expert       |                |
-|CSS        |Beginner        |Expert       |Expert       |                |
-|Objective-C|Beginner        |Know nothing |Intermediate |                |
+| Language  | Alexia Newgord | Mark Lohaus | 
+| --------- |:--------------:|:-----------:|
+|PHP        |Intermediate    |Expert       |
+|Java       |Intermediate    |Intermediate |
+|JavaScript |Beginner        |Expert       |
+|HTML       |Beginner        |Expert       |
+|CSS        |Beginner        |Expert       |
+|Objective-C|Beginner        |Know nothing |
 
 ##### Functionality: 
 - Emergency responder logs into mobile application
