@@ -1,0 +1,6 @@
+#! /bin/bash
+
+chgrp -R www-data /var/www/htdocs
+find /var/www/htdocs -type f -exec chmod 664 '{}' \;
+find /var/www/htdocs -type d -exec chmod 775 '{}' \;
+
