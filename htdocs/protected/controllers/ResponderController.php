@@ -53,7 +53,7 @@ class ResponderController extends Controller
                $success = $model->add($params);
                   
                if($success) {
-                   echo "Success!";
+                   echo "Success!!";
                } else {
                    echo "Failed";
                }
@@ -79,5 +79,20 @@ class ResponderController extends Controller
 				$this->render('error', $error);
 		}
 	}
-
+        
+        
+        /**
+         * This is what the responder will see upon
+         * logging in.
+         */
+        public function actionSubmissions()
+        {   
+            $this->render(submissions);
+             
+        }
+        
+        public function getPatient($patientOrder)
+        {
+            
+        }
 }

@@ -17,7 +17,7 @@ $this->breadcrumbs=array(
     Last <input type="text" name="last" />
     <br />
     
-    <input type ="submit" vlaue="Add Paitent" />
+    <input type ="submit" value="Add Patient" />
            
 </form>
 
