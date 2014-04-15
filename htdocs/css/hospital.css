@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 14, 2014, 9:51:14 PM
+    Author     : bongo
+*/
+
+body
+{
+    //margin: 0;
+    //padding: 0;
+    //border: 0;
+    color: #555;
+    overflow: hidden;
+    font: normal 10pt Ariel,Helvetica,sans-serif;
+    background: #EFEFEF;
+    height: 100%; 
+    width: 100%;
+    max-height: 100%; 
+}
+
+#frameLeft, #frameRight{
+//position: absolute; 
+//top: 0; 
+//left: 0; 
+//height: 100%;
+//overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+
+    height: 800px;
+    float:left;
+    width: 60%;
+    background-color: lightgrey;
+
+}
+
+#frameRight{
+//left: auto;
+//right: 0; 
+//width: 150px; /*Width of right frame div*/
+//overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+
+    height: 800px;
+    float: right;
+    width: 40%;
+    background-color: white;
+}
+

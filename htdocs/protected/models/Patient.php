@@ -1,18 +1,138 @@
 <?php
 
 /**
- * ContactForm class.
- * ContactForm is the data structure for keeping
- * contact form data. It is used by the 'contact' action of 'SiteController'.
+ * This is the model class for table "patient".
+ *
+ * The followings are the available columns in table 'patient':
+ * @property integer $id
+ * @property string $name
+ * @property string $last
+ * @property string $first
+ * @property string $dob
+ * @property string $phone_primary
+ * @property string $phone_secondary
+ * @property string $phone_emergency
+ * @property string $address
+ * @property string $city
+ * @property string $state
+ * @property string $zip
+ * @property string $country
+ * @property string $timestamp
+ *
+ * The followings are the available model relations:
+ * @property PatientInHospital[] $patientInHospitals
+ * @property PatientQuestion[] $patientQuestions
  */
-class Patient
+class Patient extends CActiveRecord
 {
-	public function __construct() {
-            error_log("inside model constructor \n", 3, '/tmp/log.txt');
-        }
-        
-        public function add($params) {
-            error_log("inside add function of model\n", 3, '/tmp/log.txt');
-        }
-        
+	/**
+	 * @return string the associated database table name
+	 */
+	public function tableName()
+	{
+		return 'patient';
+	}
+
+	/**
+	 * @return array validation rules for model attributes.
+	 */
+	public function rules()
+	{
+		// NOTE: you should only define rules for those attributes that
+		// will receive user inputs.
+		return array(
+			array('name, last, first, dob, phone_primary, phone_secondary, phone_emergency, address, city, state, zip, country, timestamp', 'required'),
+			array('name, last, first, dob, city, country', 'length', 'max'=>20),
+			array('phone_primary, phone_secondary, phone_emergency, state, zip', 'length', 'max'=>15),
+			array('address', 'length', 'max'=>30),
+			// The following rule is used by search().
+			// @todo Please remove those attributes that should not be searched.
+			array('id, name, last, first, dob, phone_primary, phone_secondary, phone_emergency, address, city, state, zip, country, timestamp', 'safe', 'on'=>'search'),
+		);
+	}
+
+	/**
+	 * @return array relational rules.
+	 */
+	public function relations()
+	{
+		// NOTE: you may need to adjust the relation name and the related
+		// class name for the relations automatically generated below.
+		return array(
+			'patientInHospitals' => array(self::HAS_MANY, 'PatientInHospital', 'patient_id'),
+			'patientQuestions' => array(self::HAS_MANY, 'PatientQuestion', 'patient_id'),
+		);
+	}
+
+	/**
+	 * @return array customized attribute labels (name=>label)
+	 */
+	public function attributeLabels()
+	{
+		return array(
+			'id' => 'ID',
+			'name' => 'Name',
+			'last' => 'Last',
+			'first' => 'First',
+			'dob' => 'Dob',
+			'phone_primary' => 'Phone Primary',
+			'phone_secondary' => 'Phone Secondary',
+			'phone_emergency' => 'Phone Emergency',
+			'address' => 'Address',
+			'city' => 'City',
+			'state' => 'State',
+			'zip' => 'Zip',
+			'country' => 'Country',
+			'timestamp' => 'Timestamp',
+		);
+	}
+
+	/**
+	 * Retrieves a list of models based on the current search/filter conditions.
+	 *
+	 * Typical usecase:
+	 * - Initialize the model fields with values from filter form.
+	 * - Execute this method to get CActiveDataProvider instance which will filter
+	 * models according to data in model fields.
+	 * - Pass data provider to CGridView, CListView or any similar widget.
+	 *
+	 * @return CActiveDataProvider the data provider that can return the models
+	 * based on the search/filter conditions.
+	 */
+	public function search()
+	{
+		// @todo Please modify the following code to remove attributes that should not be searched.
+
+		$criteria=new CDbCriteria;
+
+		$criteria->compare('id',$this->id);
+		$criteria->compare('name',$this->name,true);
+		$criteria->compare('last',$this->last,true);
+		$criteria->compare('first',$this->first,true);
+		$criteria->compare('dob',$this->dob,true);
+		$criteria->compare('phone_primary',$this->phone_primary,true);
+		$criteria->compare('phone_secondary',$this->phone_secondary,true);
+		$criteria->compare('phone_emergency',$this->phone_emergency,true);
+		$criteria->compare('address',$this->address,true);
+		$criteria->compare('city',$this->city,true);
+		$criteria->compare('state',$this->state,true);
+		$criteria->compare('zip',$this->zip,true);
+		$criteria->compare('country',$this->country,true);
+		$criteria->compare('timestamp',$this->timestamp,true);
+
+		return new CActiveDataProvider($this, array(
+			'criteria'=>$criteria,
+		));
+	}
+
+	/**
+	 * Returns the static model of the specified AR class.
+	 * Please note that you should have this exact method in all your CActiveRecord descendants!
+	 * @param string $className active record class name.
+	 * @return Patient the static model class
+	 */
+	public static function model($className=__CLASS__)
+	{
+		return parent::model($className);
+	}
 }

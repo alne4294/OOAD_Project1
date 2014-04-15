@@ -1135,3 +1135,1060 @@ Stack trace:
 REQUEST_URI=/index.php/responder/add
 HTTP_REFERER=http://snap.colorado.edu/index.php/responder/add
 ---
+2014/04/11 22:46:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contact".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('contact')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('contact')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/conta...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/contact
+---
+2014/04/11 22:48:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii_framework/web/CController.php:336
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#4 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/recor...')
+#5 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/htdocs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/responder/record
+---
+2014/04/11 22:48:29 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii_framework/web/CController.php:336
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#4 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/recor...')
+#5 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/htdocs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/responder/record
+---
+2014/04/11 22:48:29 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii_framework/web/CController.php:336
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#4 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/recor...')
+#5 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/htdocs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/responder/record
+---
+2014/04/11 22:48:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii_framework/web/CController.php:336
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#4 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/recor...')
+#5 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/htdocs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/responder/record
+---
+2014/04/11 22:48:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii_framework/web/CController.php:336
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#4 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/recor...')
+#5 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/htdocs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/responder/record
+---
+2014/04/11 22:48:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "inex".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('inex')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('inex')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/inex')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/inex
+---
+2014/04/11 22:49:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii_framework/web/CController.php:336
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#4 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/recor...')
+#5 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/htdocs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/responder/record
+---
+2014/04/11 22:49:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii_framework/web/CController.php:336
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#4 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/recor...')
+#5 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/htdocs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/responder/record
+---
+2014/04/11 22:49:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii_framework/web/CController.php:336
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#4 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/recor...')
+#5 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/htdocs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/responder/record
+---
+2014/04/11 22:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "home".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('home')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('home')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/home')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/home
+---
+2014/04/12 10:14:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contact".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('contact')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('contact')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/conta...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/contact
+---
+2014/04/12 11:37:00 [error] [exception.CException] exception 'CException' with message 'ResponderController cannot find the requested view "‘submissions’".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('???submissions?...', NULL, true)
+#1 /var/www/htdocs/protected/controllers/ResponderController.php(92): CController->render('???submissions?...')
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): ResponderController->actionSubmissions()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('submissions')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/submi...')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/responder/submissions
+---
+2014/04/12 11:37:00 [error] [exception.CException] exception 'CException' with message 'ResponderController cannot find the requested view "‘submissions’".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('???submissions?...', NULL, true)
+#1 /var/www/htdocs/protected/controllers/ResponderController.php(92): CController->render('???submissions?...')
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): ResponderController->actionSubmissions()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('submissions')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/submi...')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/responder/submissions
+---
+2014/04/12 11:40:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "add.php".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('add.php')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('add.php')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/add.p...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/add.php?addNewPatient=Add+New+Patient
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/submissions
+---
+2014/04/12 11:47:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "add.php".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('add.php')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('add.php')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/add.p...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/add.php?addNewPatient=Add+New+Patient
+---
+2014/04/13 11:24:26 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in /var/www/yii_framework/zii/widgets/CBaseListView.php:109
+Stack trace:
+#0 /var/www/yii_framework/zii/widgets/grid/CGridView.php(339): CBaseListView->init()
+#1 /var/www/yii_framework/web/CBaseController.php(147): CGridView->init()
+#2 /var/www/yii_framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 /var/www/htdocs/protected/views/responder/submissions.php(24): CBaseController->widget('zii.widgets.gri...', Array)
+#4 /var/www/yii_framework/web/CBaseController.php(126): require('/var/www/htdocs...')
+#5 /var/www/yii_framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/htdocs...', NULL, true)
+#6 /var/www/yii_framework/web/CController.php(869): CBaseController->renderFile('/var/www/htdocs...', NULL, true)
+#7 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('submissions', NULL, true)
+#8 /var/www/htdocs/protected/controllers/ResponderController.php(90): CController->render('submissions')
+#9 /var/www/yii_framework/web/actions/CInlineAction.php(49): ResponderController->actionSubmissions()
+#10 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('submissions')
+#14 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/submi...')
+#15 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/htdocs/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/responder/submissions
+---
+2014/04/13 11:24:26 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in /var/www/yii_framework/zii/widgets/CBaseListView.php:109
+Stack trace:
+#0 /var/www/yii_framework/zii/widgets/grid/CGridView.php(339): CBaseListView->init()
+#1 /var/www/yii_framework/web/CBaseController.php(147): CGridView->init()
+#2 /var/www/yii_framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 /var/www/htdocs/protected/views/responder/submissions.php(24): CBaseController->widget('zii.widgets.gri...', Array)
+#4 /var/www/yii_framework/web/CBaseController.php(126): require('/var/www/htdocs...')
+#5 /var/www/yii_framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/htdocs...', NULL, true)
+#6 /var/www/yii_framework/web/CController.php(869): CBaseController->renderFile('/var/www/htdocs...', NULL, true)
+#7 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('submissions', NULL, true)
+#8 /var/www/htdocs/protected/controllers/ResponderController.php(90): CController->render('submissions')
+#9 /var/www/yii_framework/web/actions/CInlineAction.php(49): ResponderController->actionSubmissions()
+#10 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('submissions')
+#14 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/submi...')
+#15 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/htdocs/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/responder/submissions
+---
+2014/04/13 12:19:15 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in /var/www/yii_framework/zii/widgets/CBaseListView.php:109
+Stack trace:
+#0 /var/www/yii_framework/zii/widgets/grid/CGridView.php(339): CBaseListView->init()
+#1 /var/www/yii_framework/web/CBaseController.php(147): CGridView->init()
+#2 /var/www/yii_framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 /var/www/htdocs/protected/views/responder/submissions.php(24): CBaseController->widget('zii.widgets.gri...', Array)
+#4 /var/www/yii_framework/web/CBaseController.php(126): require('/var/www/htdocs...')
+#5 /var/www/yii_framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/htdocs...', NULL, true)
+#6 /var/www/yii_framework/web/CController.php(869): CBaseController->renderFile('/var/www/htdocs...', NULL, true)
+#7 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('submissions', NULL, true)
+#8 /var/www/htdocs/protected/controllers/ResponderController.php(90): CController->render('submissions')
+#9 /var/www/yii_framework/web/actions/CInlineAction.php(49): ResponderController->actionSubmissions()
+#10 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('submissions')
+#14 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/submi...')
+#15 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/htdocs/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/responder/submissions
+---
+2014/04/13 12:19:15 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in /var/www/yii_framework/zii/widgets/CBaseListView.php:109
+Stack trace:
+#0 /var/www/yii_framework/zii/widgets/grid/CGridView.php(339): CBaseListView->init()
+#1 /var/www/yii_framework/web/CBaseController.php(147): CGridView->init()
+#2 /var/www/yii_framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 /var/www/htdocs/protected/views/responder/submissions.php(24): CBaseController->widget('zii.widgets.gri...', Array)
+#4 /var/www/yii_framework/web/CBaseController.php(126): require('/var/www/htdocs...')
+#5 /var/www/yii_framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/htdocs...', NULL, true)
+#6 /var/www/yii_framework/web/CController.php(869): CBaseController->renderFile('/var/www/htdocs...', NULL, true)
+#7 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('submissions', NULL, true)
+#8 /var/www/htdocs/protected/controllers/ResponderController.php(90): CController->render('submissions')
+#9 /var/www/yii_framework/web/actions/CInlineAction.php(49): ResponderController->actionSubmissions()
+#10 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('submissions')
+#14 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/submi...')
+#15 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/htdocs/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/responder/submissions
+---
+2014/04/13 12:20:24 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in /var/www/yii_framework/zii/widgets/CBaseListView.php:109
+Stack trace:
+#0 /var/www/yii_framework/zii/widgets/grid/CGridView.php(339): CBaseListView->init()
+#1 /var/www/yii_framework/web/CBaseController.php(147): CGridView->init()
+#2 /var/www/yii_framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 /var/www/htdocs/protected/views/responder/submissions.php(24): CBaseController->widget('zii.widgets.gri...', Array)
+#4 /var/www/yii_framework/web/CBaseController.php(126): require('/var/www/htdocs...')
+#5 /var/www/yii_framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/htdocs...', NULL, true)
+#6 /var/www/yii_framework/web/CController.php(869): CBaseController->renderFile('/var/www/htdocs...', NULL, true)
+#7 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('submissions', NULL, true)
+#8 /var/www/htdocs/protected/controllers/ResponderController.php(90): CController->render('submissions')
+#9 /var/www/yii_framework/web/actions/CInlineAction.php(49): ResponderController->actionSubmissions()
+#10 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('submissions')
+#14 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/submi...')
+#15 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/htdocs/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/responder/submissions
+---
+2014/04/13 12:20:24 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in /var/www/yii_framework/zii/widgets/CBaseListView.php:109
+Stack trace:
+#0 /var/www/yii_framework/zii/widgets/grid/CGridView.php(339): CBaseListView->init()
+#1 /var/www/yii_framework/web/CBaseController.php(147): CGridView->init()
+#2 /var/www/yii_framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 /var/www/htdocs/protected/views/responder/submissions.php(24): CBaseController->widget('zii.widgets.gri...', Array)
+#4 /var/www/yii_framework/web/CBaseController.php(126): require('/var/www/htdocs...')
+#5 /var/www/yii_framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/htdocs...', NULL, true)
+#6 /var/www/yii_framework/web/CController.php(869): CBaseController->renderFile('/var/www/htdocs...', NULL, true)
+#7 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('submissions', NULL, true)
+#8 /var/www/htdocs/protected/controllers/ResponderController.php(90): CController->render('submissions')
+#9 /var/www/yii_framework/web/actions/CInlineAction.php(49): ResponderController->actionSubmissions()
+#10 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('submissions')
+#14 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/submi...')
+#15 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/htdocs/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/responder/submissions
+---
+2014/04/13 12:20:41 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in /var/www/yii_framework/zii/widgets/CBaseListView.php:109
+Stack trace:
+#0 /var/www/yii_framework/zii/widgets/grid/CGridView.php(339): CBaseListView->init()
+#1 /var/www/yii_framework/web/CBaseController.php(147): CGridView->init()
+#2 /var/www/yii_framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 /var/www/htdocs/protected/views/responder/submissions.php(24): CBaseController->widget('zii.widgets.gri...', Array)
+#4 /var/www/yii_framework/web/CBaseController.php(126): require('/var/www/htdocs...')
+#5 /var/www/yii_framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/htdocs...', NULL, true)
+#6 /var/www/yii_framework/web/CController.php(869): CBaseController->renderFile('/var/www/htdocs...', NULL, true)
+#7 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('submissions', NULL, true)
+#8 /var/www/htdocs/protected/controllers/ResponderController.php(90): CController->render('submissions')
+#9 /var/www/yii_framework/web/actions/CInlineAction.php(49): ResponderController->actionSubmissions()
+#10 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('submissions')
+#14 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/submi...')
+#15 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/htdocs/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/responder/submissions
+---
+2014/04/13 12:20:41 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in /var/www/yii_framework/zii/widgets/CBaseListView.php:109
+Stack trace:
+#0 /var/www/yii_framework/zii/widgets/grid/CGridView.php(339): CBaseListView->init()
+#1 /var/www/yii_framework/web/CBaseController.php(147): CGridView->init()
+#2 /var/www/yii_framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 /var/www/htdocs/protected/views/responder/submissions.php(24): CBaseController->widget('zii.widgets.gri...', Array)
+#4 /var/www/yii_framework/web/CBaseController.php(126): require('/var/www/htdocs...')
+#5 /var/www/yii_framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/htdocs...', NULL, true)
+#6 /var/www/yii_framework/web/CController.php(869): CBaseController->renderFile('/var/www/htdocs...', NULL, true)
+#7 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('submissions', NULL, true)
+#8 /var/www/htdocs/protected/controllers/ResponderController.php(90): CController->render('submissions')
+#9 /var/www/yii_framework/web/actions/CInlineAction.php(49): ResponderController->actionSubmissions()
+#10 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('submissions')
+#14 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/submi...')
+#15 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/htdocs/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/responder/submissions
+---
+2014/04/13 21:05:52 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in /var/www/yii_framework/zii/widgets/CBaseListView.php:109
+Stack trace:
+#0 /var/www/yii_framework/zii/widgets/grid/CGridView.php(339): CBaseListView->init()
+#1 /var/www/yii_framework/web/CBaseController.php(147): CGridView->init()
+#2 /var/www/yii_framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 /var/www/htdocs/protected/views/responder/submissions.php(24): CBaseController->widget('zii.widgets.gri...', Array)
+#4 /var/www/yii_framework/web/CBaseController.php(126): require('/var/www/htdocs...')
+#5 /var/www/yii_framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/htdocs...', NULL, true)
+#6 /var/www/yii_framework/web/CController.php(869): CBaseController->renderFile('/var/www/htdocs...', NULL, true)
+#7 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('submissions', NULL, true)
+#8 /var/www/htdocs/protected/controllers/ResponderController.php(90): CController->render('submissions')
+#9 /var/www/yii_framework/web/actions/CInlineAction.php(49): ResponderController->actionSubmissions()
+#10 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('submissions')
+#14 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/submi...')
+#15 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/htdocs/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/responder/submissions
+---
+2014/04/13 21:05:52 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in /var/www/yii_framework/zii/widgets/CBaseListView.php:109
+Stack trace:
+#0 /var/www/yii_framework/zii/widgets/grid/CGridView.php(339): CBaseListView->init()
+#1 /var/www/yii_framework/web/CBaseController.php(147): CGridView->init()
+#2 /var/www/yii_framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 /var/www/htdocs/protected/views/responder/submissions.php(24): CBaseController->widget('zii.widgets.gri...', Array)
+#4 /var/www/yii_framework/web/CBaseController.php(126): require('/var/www/htdocs...')
+#5 /var/www/yii_framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/htdocs...', NULL, true)
+#6 /var/www/yii_framework/web/CController.php(869): CBaseController->renderFile('/var/www/htdocs...', NULL, true)
+#7 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('submissions', NULL, true)
+#8 /var/www/htdocs/protected/controllers/ResponderController.php(90): CController->render('submissions')
+#9 /var/www/yii_framework/web/actions/CInlineAction.php(49): ResponderController->actionSubmissions()
+#10 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('submissions')
+#14 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/submi...')
+#15 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/htdocs/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/responder/submissions
+---
+2014/04/13 21:37:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Patient.php".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('Patient.php')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('Patient.php')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('site/Patient.ph...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/Patient.php
+---
+2014/04/13 21:40:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Responder.php".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('Responder.php')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('Responder.php')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('site/Responder....')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/Responder.php
+---
+2014/04/13 21:40:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Responder.php".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('Responder.php')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('Responder.php')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('site/Responder....')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/Responder.php/addPatient/
+---
+2014/04/13 21:41:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "add".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('add')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('add')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/add')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/add
+---
+2014/04/14 16:15:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "snapresponder/add".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('snapresponder/a...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/snapresponder/add
+---
+2014/04/14 16:15:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "snapresponder/addpatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('snapresponder/a...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/snapresponder/addpatient
+---
+2014/04/14 16:16:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "snapresponder/AddPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('snapresponder/A...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/snapresponder/AddPatient
+---
+2014/04/14 16:16:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "snapresponder".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('snapresponder')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/snapresponder/
+---
+2014/04/14 16:16:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "snapResponder".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('snapResponder')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/snapResponder/
+---
+2014/04/14 16:16:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "SnapResponder".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('SnapResponder')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/SnapResponder/
+---
+2014/04/14 16:17:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/record".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/recor...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/record
+---
+2014/04/14 16:17:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "snapresponder/record".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('snapresponder/r...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/snapresponder/record
+---
+2014/04/14 16:17:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/record".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/recor...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/record
+---
+2014/04/14 16:17:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "snapresponder/record".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('snapresponder/r...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/snapresponder/record
+---
+2014/04/14 16:18:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "snapresponder/addPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('snapresponder/a...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/snapresponder/addPatient
+---
+2014/04/14 16:18:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "snapresponder/addPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('snapresponder/a...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/snapresponder/addPatient
+---
+2014/04/14 16:18:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/addpatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/addpa...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/addpatient
+---
+2014/04/14 16:19:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/AddPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/AddPa...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/AddPatient
+---
+2014/04/14 16:20:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/AddPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/AddPa...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/AddPatient
+---
+2014/04/14 16:20:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/
+---
+2014/04/14 16:20:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "responder".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('responder')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('responder')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('site/responder/...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/responder/AddPatient/
+---
+2014/04/14 16:20:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "responder".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('responder')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('responder')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('site/responder/...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/responder/addPatient/
+---
+2014/04/14 16:20:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "responder".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('responder')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('responder')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('site/responder/...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/responder/addpatient/
+---
+2014/04/14 16:21:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/addPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/addPa...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/addPatient
+---
+2014/04/14 16:21:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/addPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/addPa...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/addPatient
+---
+2014/04/14 16:22:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/addPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/addPa...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/addPatient
+---
+2014/04/14 16:23:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/addPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/addPa...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/addPatient
+---
+2014/04/14 16:23:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/addPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/addPa...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/addPatient
+---
+2014/04/14 16:25:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/addPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/addPa...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/addPatient
+---
+2014/04/14 16:25:10 [error] [exception.CException] exception 'CException' with message 'Snap_responderController cannot find the requested view "add".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('add', NULL, true)
+#1 /var/www/htdocs/protected/controllers/Snap_responderController.php(63): CController->render('add')
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): Snap_responderController->actionAddPatient()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('addPatient')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('snap_responder/...')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/snap_responder/addPatient
+---
+2014/04/14 16:26:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "snap_responder/addPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('snap_responder/...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/snap_responder/addPatient
+---
+2014/04/14 16:26:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "snap_responder/addPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('snap_responder/...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/snap_responder/addPatient
+---
+2014/04/14 16:26:09 [error] [exception.CException] exception 'CException' with message 'SnapresponderController cannot find the requested view "add".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('add', NULL, true)
+#1 /var/www/htdocs/protected/controllers/SnapresponderController.php(63): CController->render('add')
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): SnapresponderController->actionAddPatient()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('addPatient')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('snapresponder/a...')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/snapresponder/addPatient
+---
+2014/04/14 16:26:38 [error] [exception.CException] exception 'CException' with message 'SnapresponderController cannot find the requested view "add".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('add', NULL, true)
+#1 /var/www/htdocs/protected/controllers/SnapresponderController.php(63): CController->render('add')
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): SnapresponderController->actionAddPatient()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('addPatient')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('snapresponder/a...')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/snapresponder/addPatient
+---
+2014/04/14 16:26:38 [error] [exception.CException] exception 'CException' with message 'SnapresponderController cannot find the requested view "add".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('add', NULL, true)
+#1 /var/www/htdocs/protected/controllers/SnapresponderController.php(63): CController->render('add')
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): SnapresponderController->actionAddPatient()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('addPatient')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('snapresponder/a...')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/snapresponder/addPatient
+---
+2014/04/14 16:26:39 [error] [exception.CException] exception 'CException' with message 'SnapresponderController cannot find the requested view "add".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('add', NULL, true)
+#1 /var/www/htdocs/protected/controllers/SnapresponderController.php(63): CController->render('add')
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): SnapresponderController->actionAddPatient()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('addPatient')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('snapresponder/a...')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/snapresponder/addPatient
+---
+2014/04/14 16:26:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/addPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/addPa...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/addPatient
+---
+2014/04/14 16:26:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/addPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/addPa...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/addPatient
+---
+2014/04/14 16:26:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/addPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/addPa...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/addPatient
+---
+2014/04/14 16:27:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/addPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/addPa...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/addPatient
+---
+2014/04/14 16:27:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/addPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/addPa...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/addPatient
+---
+2014/04/14 16:27:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/addPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/addPa...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/addPatient
+---
+2014/04/14 16:27:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/addPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/addPa...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/addPatient
+---
+2014/04/14 16:27:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/addPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/addPa...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/addPatient
+---
+2014/04/14 16:29:08 [error] [exception.CException] exception 'CException' with message 'SresponderController cannot find the requested view "add".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('add', NULL, true)
+#1 /var/www/htdocs/protected/controllers/SresponderController.php(63): CController->render('add')
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionAddPatient()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('addPatient')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('sresponder/addP...')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/sresponder/addPatient
+---
+2014/04/14 16:30:23 [error] [exception.CException] exception 'CException' with message 'SresponderController cannot find the requested view "add".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('add', NULL, true)
+#1 /var/www/htdocs/protected/controllers/SresponderController.php(63): CController->render('add')
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionAddPatient()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('addPatient')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('sresponder/addP...')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/sresponder/addPatient
+---
+2014/04/14 16:30:28 [error] [exception.CException] exception 'CException' with message 'SresponderController cannot find the requested view "add".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('add', NULL, true)
+#1 /var/www/htdocs/protected/controllers/SresponderController.php(63): CController->render('add')
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionAddPatient()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('addPatient')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('sresponder/addP...')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/sresponder/addPatient
+---
+2014/04/14 16:30:42 [error] [exception.CException] exception 'CException' with message 'SresponderController cannot find the requested view "add".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('add', NULL, true)
+#1 /var/www/htdocs/protected/controllers/SresponderController.php(63): CController->render('add')
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionAddPatient()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('addPatient')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('sresponder/addP...')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/sresponder/addPatient
+---
+2014/04/14 16:30:43 [error] [exception.CException] exception 'CException' with message 'SresponderController cannot find the requested view "add".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('add', NULL, true)
+#1 /var/www/htdocs/protected/controllers/SresponderController.php(63): CController->render('add')
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionAddPatient()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('addPatient')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('sresponder/addP...')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/sresponder/addPatient
+---
+2014/04/14 16:30:44 [error] [exception.CException] exception 'CException' with message 'SresponderController cannot find the requested view "add".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('add', NULL, true)
+#1 /var/www/htdocs/protected/controllers/SresponderController.php(63): CController->render('add')
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionAddPatient()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('addPatient')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('sresponder/addP...')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/sresponder/addPatient
+---
+2014/04/14 16:30:44 [error] [exception.CException] exception 'CException' with message 'SresponderController cannot find the requested view "add".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('add', NULL, true)
+#1 /var/www/htdocs/protected/controllers/SresponderController.php(63): CController->render('add')
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionAddPatient()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('addPatient')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('sresponder/addP...')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/sresponder/addPatient
+---
+2014/04/14 16:44:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/addPatient".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/addPa...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/addPatient
+---
+2014/04/14 16:44:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/add".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/add')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/add
+---
+2014/04/14 16:44:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder
+---
+2014/04/14 16:44:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "responder/add".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/add')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/responder/add
+---
+2014/04/14 16:44:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/yii_framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(ModelGenerator), Object(CInlineAction))
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('index')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii/model/index
+---
+2014/04/14 16:44:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/yii_framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii
+---
+2014/04/14 16:45:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/yii_framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('login')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('gii/default/log...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii/default/login
+---
+2014/04/14 16:45:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/yii_framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('login')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('gii/default/log...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii/default/login
+---
+2014/04/14 19:53:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/yii_framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(CrudGenerator), Object(CInlineAction))
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('index')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii/crud/index
+HTTP_REFERER=http://snap.colorado.edu/index.php/gii/module/index
+---
+2014/04/14 19:53:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/yii_framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('index')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('gii/default/ind...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii/default/index
+---
+2014/04/14 19:58:01 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii_framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii_framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii_framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii_framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii_framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii_framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii_framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('patient/admin')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/patient/admin
+HTTP_REFERER=http://snap.colorado.edu/index.php/site/login
+---
+2014/04/14 19:59:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii_framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii_framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii_framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii_framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii_framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii_framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii_framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('patient/admin')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/patient/admin
+HTTP_REFERER=http://snap.colorado.edu/index.php/patient/create
+---
+2014/04/14 19:59:40 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii_framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii_framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii_framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii_framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii_framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii_framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii_framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('patient/admin')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/patient/admin
+HTTP_REFERER=http://snap.colorado.edu/index.php/patient
+---

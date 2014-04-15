@@ -1,6 +1,6 @@
 <?php
 
-class ResponderController extends Controller
+class SresponderController extends Controller
 {
 	/**
 	 * Declares class-based actions.
