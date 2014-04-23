@@ -5,19 +5,19 @@ class DefaultController extends CController
     
     	public $layout='/layouts/column1';
 
-        public function actionIndex($id = null)
+        public function actionIndex()
 	{
             
             $model=$this->loadModel($id);
             //$dataProvider=new Patient();
             
-           if(Yii::app()->request->isAjaxRequest){
+           /*if(Yii::app()->request->isAjaxRequest){
                echo "I'm here!!!"; 
                $id = $_GET[0];
                 $model=$this->loadModel($id);
                 //$dataProvider->criteria = array('condition'=>'id='.$id);
                 echo CJSON::encode($model);
-            }
+            }*/
             
             $dataProvider=new CActiveDataProvider(Patient::model(), array(
                     'keyAttribute'=>'id',//needed for gridview to know selection?
@@ -55,6 +55,15 @@ class DefaultController extends CController
                     throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
 	}
+        
+        public function actionPartUpdate($id = null) {
+            $model = Patient::model()->findByPk($id);
+            if ($model === null)
+                throw new CHttpException(404, 'The requested page does not exist.');
+
+            $this->renderPartial('_view', array('model' => $model));
+            Yii::app()->end();
+        }
         
         public function actionObtainPatientInfo($id){
 		//$response = Patient::model()->findAllByAttributes(array('id'=>$id));

@@ -4,13 +4,13 @@
     
      <script type="text/javascript">
         function selectRow(target_id) {
-            alert($.fn.yiiGridView.getSelection(target_id));
+            /*alert($.fn.yiiGridView.getSelection(target_id));
             
             var id = $.fn.yiiGridView.getSelection(target_id);
             //$.fn.yiiGridView.update('patient',{ data: target_id });
             
             var action='index.php/hospital/default/id/'+id;
-            /*
+            
             $.getJSON(action, function(data) {
                 alert(data.id);
                 alert(data.last);
@@ -21,6 +21,24 @@
         }
     </script>  
 
+    
+    <script type="text/javascript">
+    function updateABlock(grid_id) {
+ 
+        var keyId = $.fn.yiiGridView.getSelection(grid_id);
+        keyId  = keyId[0]; //above function returns an array with single item, so get the value of the first item
+ 
+        $.ajax({
+//            url: '<?php echo $this->createUrl('PartUpdate'); ?>',
+            url: 'http://snap.colorado.edu/index.php/hospital/default/PartUpdate/id/'+keyId,
+//            data: {id: keyId},
+            type: 'GET',
+            success: function(data) {
+                $('#frameRight').html(data);
+            }
+        });
+    }
+    </script>
     
     
     <?php
@@ -48,7 +66,7 @@
                              ),
                  ),*/
             ),
-            'selectionChanged'=>selectRow,//'CHtml::link(CHtml::encode($data->id), array(\'index\', \'id\'=>$data->id))',//
+            'selectionChanged'=>'updateABlock',//selectRow,//'CHtml::link(CHtml::encode($data->id), array(\'index\', \'id\'=>$data->id))',//
         ));
     ?>
 </div>
