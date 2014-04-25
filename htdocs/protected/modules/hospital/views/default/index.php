@@ -1,27 +1,11 @@
 
+<?php
+$this->pageTitle=Yii::app()->name;
+?>
+
+
 <div id="frameLeft">
-    
-    
-     <script type="text/javascript">
-        function selectRow(target_id) {
-            /*alert($.fn.yiiGridView.getSelection(target_id));
-            
-            var id = $.fn.yiiGridView.getSelection(target_id);
-            //$.fn.yiiGridView.update('patient',{ data: target_id });
-            
-            var action='index.php/hospital/default/id/'+id;
-            
-            $.getJSON(action, function(data) {
-                alert(data.id);
-                alert(data.last);
-                $('#frameRight').html('<p> Name: ' + data.id + '</p>');
-                $('#frameRight').append('<p>Last : ' + data.last+ '</p>');
-
-            });*/
-        }
-    </script>  
-
-    
+     
     <script type="text/javascript">
     function updateABlock(grid_id) {
  
@@ -40,6 +24,8 @@
     }
     </script>
     
+    <br>
+    <h5><em>Select row for detail view</em></h5>
     
     <?php
         $this->widget('zii.widgets.grid.CGridView',array(
@@ -53,7 +39,7 @@
                 array('name'=>'timestamp','value'=>'$data->timestamp','htmlOptions'=>array('width'=>'150px')),
                 array('name'=>'last','value'=>'$data->last'),
                 array('name'=>'first','value'=>'$data->first',),
-                array('name'=>'dob','value'=>'$data->dob',),
+                array('name'=>'dob','value'=>'$data->dob','htmlOptions'=>array('width'=>'100px')),
                 /*array(
                     'class'=>'CButtonColumn',
                     'template'=>'{view}{received}{treated}',//View, Mark received, Mark treated
@@ -72,10 +58,15 @@
 </div>
 
 <div id="frameRight">
-
-
-    <?php $this->widget('zii.widgets.CDetailView', array(
-            'data'=>$model,
+    
+    <br>
+    <h2>ID# </h2>
+    
+    <?php 
+    $this->widget('zii.widgets.CDetailView', array(
+            'data'=>$dataProvider,
+        'cssFile' => Yii::app()->theme->baseUrl . '/css/hospitaldvstyles.css',
+//            'htmlOptions'=>array('width'=>'40px'),
             'attributes'=>array(
                     'id',
                     'name',
@@ -91,10 +82,6 @@
                     'zip',
                     'country',
                     'timestamp',
-                array(
-                    'name'=>'last',
-                    'value'=>$data->last,
-                ),
             ),
     )); ?>
 </div>

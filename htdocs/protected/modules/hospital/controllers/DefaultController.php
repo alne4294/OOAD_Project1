@@ -1,23 +1,15 @@
 <?php
 
-class DefaultController extends CController
+class DefaultController extends Controller
 {
     
-    	public $layout='/layouts/column1';
+    	public $layout='/layouts/column2';
+        //public $menu=array();
 
         public function actionIndex()
 	{
             
             $model=$this->loadModel($id);
-            //$dataProvider=new Patient();
-            
-           /*if(Yii::app()->request->isAjaxRequest){
-               echo "I'm here!!!"; 
-               $id = $_GET[0];
-                $model=$this->loadModel($id);
-                //$dataProvider->criteria = array('condition'=>'id='.$id);
-                echo CJSON::encode($model);
-            }*/
             
             $dataProvider=new CActiveDataProvider(Patient::model(), array(
                     'keyAttribute'=>'id',//needed for gridview to know selection?
@@ -65,20 +57,4 @@ class DefaultController extends CController
             Yii::app()->end();
         }
         
-        public function actionObtainPatientInfo($id){
-		//$response = Patient::model()->findAllByAttributes(array('id'=>$id));
-                $model=$this->loadModel($id);
-		header("Content-type: application/json");
-		//echo CJSON::encode($model);
-
-                $newmodel = CJSON::encode($model);
-                $array = json_decode($newmodel, true);
-                var_dump($array);
-                /*
-                //$this->render('index',array(
-		//	'model'=>$model,
-		//));
-                
-                return CJSON::encode($model);*/
-	}
 }
