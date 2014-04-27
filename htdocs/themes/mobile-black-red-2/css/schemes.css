@@ -1,0 +1,49 @@
+/*   
+Theme Name: Simple Mobile
+Scheme Name: Black-Red
+*/
+
+/* === LOGO === */
+#logo a:hover {
+  color: #E42E2E;
+}
+
+/* === MENU === */
+#menu ul {
+  list-style-image: url(../images/list-image.png);
+}
+
+/* === FOOTER === */
+#footer .copyright {
+  color: #8C0E0E;
+}
+
+/* === CUSTOM === */
+.hr {
+  background: #450909;
+}
+
+/* === STYLES === */
+a {
+  color: #E42E2E;
+}
+a:hover {
+  color: #E64040;
+}
+blockquote {
+  background-image: url(../images/quote-begin.png);
+}
+blockquote div.quote-end {
+  background-image: url(../images/quote-end.png);
+}
+table {
+  border-color: #450909;
+}
+td, th {
+  border-color: #450909;
+}
+  
+/* === WP STYLES === */
+#wp-calendar #today {
+  background: #450909;
+}

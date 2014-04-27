@@ -28,6 +28,7 @@ return array(
 			'ipFilters'=>array('128.138.65.70','::1'),
 		),
 		'hospital',
+                'responder',
 	),
 
 	// application components
@@ -41,6 +42,7 @@ return array(
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
+                                'hospital/<id:\d+>'=>'hospital',
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
