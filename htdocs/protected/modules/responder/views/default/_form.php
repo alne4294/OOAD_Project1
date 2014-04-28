@@ -15,15 +15,15 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<!--<p class="note">Fields with <span class="required">*</span> are required.</p>-->
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
+<!--	<div class="row">
 		<?php echo $form->labelEx($model,'name'); ?>
 		<?php echo $form->textField($model,'name',array('size'=>20,'maxlength'=>20)); ?>
 		<?php echo $form->error($model,'name'); ?>
-	</div>
+	</div>-->
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'last'); ?>
@@ -38,7 +38,7 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'dob'); ?>
+		<?php echo $form->labelEx($model,'Date of Birth'); ?>
 		<?php echo $form->textField($model,'dob',array('size'=>20,'maxlength'=>20)); ?>
 		<?php echo $form->error($model,'dob'); ?>
 	</div>
@@ -91,11 +91,11 @@
 		<?php echo $form->error($model,'country'); ?>
 	</div>
 
-	<div class="row">
+<!--	<div class="row">
 		<?php echo $form->labelEx($model,'timestamp'); ?>
 		<?php echo $form->textField($model,'timestamp'); ?>
 		<?php echo $form->error($model,'timestamp'); ?>
-	</div>
+	</div>-->
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

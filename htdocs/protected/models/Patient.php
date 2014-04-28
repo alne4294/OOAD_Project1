@@ -41,8 +41,9 @@ class Patient extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, last, first, dob, phone_primary, phone_secondary, phone_emergency, address, city, state, zip, country, timestamp', 'required'),
-			array('name, last, first, dob, city, country', 'length', 'max'=>20),
+//			array('name, last, first, dob, phone_primary, phone_secondary, phone_emergency, address, city, state, zip, country, timestamp', 'required'),
+//			array('name, last, first, dob, phone_primary, phone_secondary, phone_emergency, address, city, state, zip, country'),
+                        array('name, last, first, dob, city, country', 'length', 'max'=>20),
 			array('phone_primary, phone_secondary, phone_emergency, state, zip', 'length', 'max'=>15),
 			array('address', 'length', 'max'=>30),
 			// The following rule is used by search().

@@ -60,8 +60,6 @@ class Squestion
         public function buildQuestionTree($visitor) {
             // Implements the Visitor Design Pattern where the vistor object passed in has a method called processTreeNode, which wraps question node in html defined by visitor object.
 
-            $questionTreeHtml = '';
-
             $questionTreeHtml = $this->processQuestion($visitor, null);
 
             return $questionTreeHtml;
@@ -77,16 +75,17 @@ class Squestion
 
             for($i=0; $i<count($questions); $i++) {
                 if($i == 0) { // first queston, go in.
-                    $questionsHtml .= $visitor->getStartGroupHtml();
+                    $questionsHtml .= $visitor->getStartGroupHtml($questions[$i]);
                 }
-                $questionsHtml .= $visitor->addHtmlToQuestion($questions[$i]);
+                $questionsHtml .= $visitor->getStartHTml($questions[$i]);
                 $questionsHtml .= $this->processQuestion($visitor, $questions[$i]['id']); // Recursive call
+                $questionsHtml .= $visitor->getEndHTml($questions[$i]);
                 if($i+1 == count($questions)) { // last question, come out.
-                    $questionsHtml .= $visitor->getEndGroupHtml();
+                    $questionsHtml .= $visitor->getEndGroupHtml($questions[$i]);
                     return $questionsHtml; // BASE CASE returning empty string when there ARE questions. 
-                }
+                }                
             }
-            
+
             return $questionsHtml;  // BASE CASE returning empty string when there are NO questions returned.
         }
         
@@ -105,7 +104,7 @@ class Squestion
                 where  
                     parent $nullParentSql
             ";
-                        
+            
             $connection=Yii::app()->db; 
             $command = $connection->createCommand($sql);
             $dataReader = $command->query(); // gets an array of arrays (will need foreach loop to go though) $rows=$dataReader->readAll(); // Get all the results into an array.
@@ -113,6 +112,7 @@ class Squestion
             
             return $questions;
         }
-}
+        
+    }
 
 ?>

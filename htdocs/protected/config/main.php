@@ -25,12 +25,13 @@ return array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'Snap4Life',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('128.138.65.70','::1'),
+			'ipFilters'=>array('128.138.138.122','::1'),
 		),
-		'hospital',
-                'responder',
-	),
-
+		'hospital', 
+                'admin',
+                'responder', 
+	), 
+    
 	// application components
 	'components'=>array(
 		'user'=>array(
@@ -87,6 +88,6 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
+		'adminEmail'=>'alne4294@colorado.edu',
 	),
 );

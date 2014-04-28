@@ -45,14 +45,14 @@
           Navigate <img src="<?php echo Yii::app()->theme->baseUrl ?>/images/down.png" alt="" /> 
           <span class="after"></span> 
         </a> 
-        <form id="searchform" action="" method="get"> 
+<!--        <form id="searchform" action="" method="get"> 
           <div class="button normal search"> 
             <span class="before"></span> 
             <input id="s" type="text" name="s" value="search" /> 
             <input id="searchsubmit" type="submit" value="" /> 
             <span class="after"></span> 
           </div> 
-        </form> 
+        </form> -->
       </div> 
       <!-- END NAVIGATION & SEARCH --> 
  
@@ -60,11 +60,12 @@
     <div id="menu">
         <?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+				array('label'=>'Site Home', 'url'=>array('/site/index')),
+                                array('label'=>'View Patients', 'url'=>array('/responder/default/index/')),
+				array('label'=>'New Patient', 'url'=>array('/responder/default/create/')),
+                                array('label'=>'Add Patient Info', 'url'=>array('/responder/sresponder/record')),
+				array('label'=>'Login', 'url'=>array('/responder/default/login'), 'visible'=>Yii::app()->user->isGuest),
+				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/responder/default/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
 		)); ?>
     </div>

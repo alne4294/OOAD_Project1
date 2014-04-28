@@ -10,9 +10,6 @@ and open the template in the editor.
 
 body
 {
-    //margin: 0;
-    //padding: 0;
-    //border: 0;
     color: #555;
     overflow: hidden;
     font: normal 10pt Ariel,Helvetica,sans-serif;
@@ -22,29 +19,22 @@ body
     max-height: 100%; 
 }
 
-#frameLeft, #frameRight{
-//position: absolute; 
-//top: 0; 
-//left: 0; 
-//height: 100%;
-//overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
-
+#frameLeft, #frameRight
+{
     height: 800px;
     float:left;
-    width: 60%;
-    background-color: lightgrey;
+    width: 45%;
+    background-color: light;
+    padding: 15px;
 
 }
 
-#frameRight{
-//left: auto;
-//right: 0; 
-//width: 150px; /*Width of right frame div*/
-//overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
-
+#frameRight
+{ 
     height: 800px;
     float: right;
-    width: 40%;
+    width: 50%;
     background-color: white;
+    padding:15px;
+    
 }
-

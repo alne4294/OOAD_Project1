@@ -4,6 +4,8 @@ class HospitalModule extends CWebModule
 {
 	public function init()
 	{
+                Yii::app()->theme = 'hospitalPepper';
+            
 		// this method is called when the module is being created
 		// you may place code here to customize the module or the application
 

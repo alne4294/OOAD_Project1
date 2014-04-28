@@ -4,9 +4,9 @@
 /* @var $form CActiveForm */
 
 $this->pageTitle=Yii::app()->name . ' - Contact Us';
-$this->breadcrumbs=array(
-	'Contact',
-);
+//$this->breadcrumbs=array(
+//	'Contact',
+//);
 ?>
 
 <h1>Contact Us</h1>
@@ -20,7 +20,7 @@ $this->breadcrumbs=array(
 <?php else: ?>
 
 <p>
-If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
+For questions, please fill out the following form.
 </p>
 
 <div class="form">

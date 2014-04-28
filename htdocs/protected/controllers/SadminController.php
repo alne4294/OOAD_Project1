@@ -21,22 +21,22 @@ class SAdminController extends Controller
 		// $this->render('index');            
 	}
         
-        public function getStartGroupHtml() {
+        public function getStartGroupHtml($question) {
             
             $html = "<ul>";
             
             return $html;
         }
         
-        public function getEndGroupHtml() {
+        public function getEndGroupHtml($question) {
             
             $html = "</ul>";
             
             return $html;
         }
         
-        public function addHtmlToQuestion($question) // $name is the text of the question
-        {
+        public function getStartHTml($question) {
+            
             $id = $question['id'];
             $name = $question['name'];
             
@@ -44,10 +44,18 @@ class SAdminController extends Controller
                 <li>
                     <input type=\"text\" name=\"update[$id]\" value=\"$name\" /> 
                     | <input type=\"checkbox\" name=\"delete[]\" value=\"$id\"/> Delete
-                    | Add Child: <input type=\"text\" name=\"add[$id]\" value=\"\" />  
-                </li>";
+                    | Add Child: <input type=\"text\" name=\"add[$id]\" value=\"\" />";
             
             return $html;
+        }
+        
+        public function getEndHTml($question) {
+            
+            $html = "
+                </li>";     
+            
+            return $html;
+            
         }
         
 	public function actionManageQuestions()
