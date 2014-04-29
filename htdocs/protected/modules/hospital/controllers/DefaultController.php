@@ -47,6 +47,15 @@ class DefaultController extends Controller
                     throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
 	}
+
+        public function actionQuestionUpdate($id = null) {
+//            $model = Patient::model()->findByPk($id);
+//            if ($model === null)
+//                throw new CHttpException(404, 'The requested page does not exist.');
+
+            $this->renderPartial('_questions', array('patientId' => $id));
+            Yii::app()->end();
+        }
         
         public function actionPartUpdate($id = null) {
             $model = Patient::model()->findByPk($id);
@@ -91,6 +100,86 @@ class DefaultController extends Controller
 	{
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
+	}
+        
+        
+        public function getStartGroupHtml($question) {
+            
+            $html = "<ul>";
+            
+            return $html;
+        }
+        
+        public function getEndGroupHtml($question) {
+            
+            $html = "</ul>";
+            
+            return $html;
+        }
+        
+        public function getStartHTml($question) {
+            
+            $qid = $question['id'];
+            $name = $question['name'];
+            
+            $html = "
+                <li><a id=\"$qid\">$name</a>";
+            
+            return $html;
+        }
+        
+        public function getEndHTml($question) {
+            
+            $html = "
+                </li>";     
+            
+            return $html;
+            
+        }
+        
+        public function actionGetyes($patientId) {
+            
+            // FOR AJAX CALL, RETURNS JSON.
+            
+            $patientModel = new Spatient;
+            
+            $patientsArray = $patientModel->getAnsweredYesQuestionsForPatient($patientId);
+            
+            $patientsJsonString = json_encode($patientsArray);
+                
+            echo $patientsJsonString;
+            
+        }
+        
+        public function actionShowyes($patientId) {
+            
+            $errorMessages = array();
+            
+            $questionModel = new Squestion;
+
+            $questionTreeHtml = $questionModel->buildQuestionTree($this);
+
+            $this->renderPartial('_questions', array(
+                'errorMessages' => $errorMessages,
+                'patientId' => $patientId,
+                'questionTreeHtml' => $questionTreeHtml
+            ));
+            Yii::app()->end();
+            
+        }
+        
+	/**
+	 * This is the action to handle external exceptions.
+	 */
+	public function actionError()
+	{
+		if($error=Yii::app()->errorHandler->error)
+		{
+			if(Yii::app()->request->isAjaxRequest)
+				echo $error['message'];
+			else
+				$this->render('error', $error);
+		}
 	}
         
 }

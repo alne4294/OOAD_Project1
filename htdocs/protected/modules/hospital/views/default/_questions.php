@@ -1,6 +1,6 @@
 <?php
 
-$this->pageTitle=Yii::app()->name . ' - Answer Medical Questions About Patient';
+//$this->pageTitle=Yii::app()->name . ' - Answer Medical Questions About Patient';
 //$this->breadcrumbs=array(
 //	"View Questions for Patient $patientId",
 //);
@@ -78,7 +78,9 @@ $this->pageTitle=Yii::app()->name . ' - Answer Medical Questions About Patient';
     
 </style>
     
-<h1>View Questions for Patient <?php echo $patientId; ?></h1>
+<h1>Patient ID# <?php echo $patientId; ?></h1>
+<br>
+<h4><i>Suspected conditions</i></h4>
 
 <div id="questions">
     <ul>
@@ -87,3 +89,5 @@ $this->pageTitle=Yii::app()->name . ' - Answer Medical Questions About Patient';
         </li>
     </ul>
 </div>
+
+<br>

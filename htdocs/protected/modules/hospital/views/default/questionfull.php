@@ -1,9 +1,9 @@
 <?php
 
 $this->pageTitle=Yii::app()->name . ' - Answer Medical Questions About Patient';
-//$this->breadcrumbs=array(
-//	"View Questions for Patient $patientId",
-//);
+$this->breadcrumbs=array(
+	"View Questions for Patient $patientId",
+);
 ?>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>

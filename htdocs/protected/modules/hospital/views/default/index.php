@@ -8,7 +8,7 @@ $this->pageTitle=Yii::app()->name;
      
     <script type="text/javascript">
     function updateABlock(grid_id) {
- 
+        
         var keyId = $.fn.yiiGridView.getSelection(grid_id);
         keyId  = keyId[0]; //above function returns an array with single item, so get the value of the first item
  
@@ -19,6 +19,13 @@ $this->pageTitle=Yii::app()->name;
             type: 'GET',
             success: function(data) {
                 $('#frameRight').html(data);
+                $.ajax({
+                    url: 'http://snap.colorado.edu/index.php/hospital/default/showyes?patientId='+keyId,
+                    type: 'GET',
+                    success: function(data) {
+                        $('#frameMiddle').html(data);
+                    }
+                });
             }
         });
     }
@@ -52,36 +59,41 @@ $this->pageTitle=Yii::app()->name;
                              ),
                  ),*/
             ),
-            'selectionChanged'=>'updateABlock',//selectRow,//'CHtml::link(CHtml::encode($data->id), array(\'index\', \'id\'=>$data->id))',//
+            'selectionChanged'=>'updateABlock',
         ));
     ?>
 </div>
 
+<div id="frameMiddle">
+    <!--<h2>Hi there</h2>-->
+    
+</div>
+
 <div id="frameRight">
     
-    <br>
-    <h2>ID# </h2>
+<!--    <br>
+    <h2>ID# </h2>-->
     
     <?php 
-    $this->widget('zii.widgets.CDetailView', array(
-            'data'=>$dataProvider,
-        'cssFile' => Yii::app()->theme->baseUrl . '/css/hospitaldvstyles.css',
-//            'htmlOptions'=>array('width'=>'40px'),
-            'attributes'=>array(
-                    'id',
-                    'name',
-                    'last',
-                    'first',
-                    'dob',
-                    'phone_primary',
-                    'phone_secondary',
-                    'phone_emergency',
-                    'address',
-                    'city',
-                    'state',
-                    'zip',
-                    'country',
-                    'timestamp',
-            ),
-    )); ?>
+//    $this->widget('zii.widgets.CDetailView', array(
+//            'data'=>$dataProvider,
+//        'cssFile' => Yii::app()->theme->baseUrl . '/css/hospitaldvstyles.css',
+////            'htmlOptions'=>array('width'=>'40px'),
+//            'attributes'=>array(
+//                    'id',
+//                    'name',
+//                    'last',
+//                    'first',
+//                    'dob',
+//                    'phone_primary',
+//                    'phone_secondary',
+//                    'phone_emergency',
+//                    'address',
+//                    'city',
+//                    'state',
+//                    'zip',
+//                    'country',
+//                    'timestamp',
+//            ),
+//    )); ?>
 </div>
