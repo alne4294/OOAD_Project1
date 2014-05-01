@@ -13,23 +13,40 @@ $this->pageTitle=Yii::app()->name;
         keyId  = keyId[0]; //above function returns an array with single item, so get the value of the first item
  
         $.ajax({
-//            url: '<?php echo $this->createUrl('PartUpdate'); ?>',
             url: 'http://snap.colorado.edu/index.php/hospital/default/PartUpdate/id/'+keyId,
-//            data: {id: keyId},
             type: 'GET',
             success: function(data) {
                 $('#frameRight').html(data);
+                
                 $.ajax({
-                    url: 'http://snap.colorado.edu/index.php/hospital/default/showyes?patientId='+keyId,
+                    url: 'http://snap.colorado.edu/index.php/hospital/default/ImageUpdate/id/'+keyId,
                     type: 'GET',
-                    success: function(data) {
-                        $('#frameMiddle').html(data);
+                    success: function(imageData) {
+                        $('#frameSecondMiddle').html(imageData);
+                        
+                        var request = $.ajax({
+                            url: 'http://snap.colorado.edu/index.php/hospital/default/showyes?patientId='+keyId,
+                            type: 'GET',
+                            success: function(questionData) {
+                                $('#frameMiddle').html(questionData);
+                            }
+                        });
+        //              request.abort();
                     }
                 });
+                
             }
         });
+        
+        document.getElementById("content").innerHTML = response.html;
+        document.title = response.pageTitle;
+        window.history.pushState({"html":response.html,"pageTitle":response.pageTitle},"", urlPath);
     }
     </script>
+    
+    <FORM>
+    <INPUT TYPE="button" style="background-color:lightgray" onClick="history.go(0)" VALUE="Reset Form">
+    </FORM>
     
     <br>
     <h5><em>Select row for detail view</em></h5>
@@ -62,6 +79,11 @@ $this->pageTitle=Yii::app()->name;
             'selectionChanged'=>'updateABlock',
         ));
     ?>
+</div>
+
+<div id="frameSecondMiddle">
+    <!--<h2>Hi there</h2>-->
+    
 </div>
 
 <div id="frameMiddle">

@@ -7612,3 +7612,2016 @@ Stack trace:
 REQUEST_URI=/index.php/responder/default/managequestions
 HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
 ---
+2014/04/27 21:03:18 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/yii_framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(ModuleGenerator), Object(CInlineAction))
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('index')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('gii/module/inde...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii/module/index
+HTTP_REFERER=http://snap.colorado.edu/index.php/gii/module/index
+---
+2014/04/27 21:27:47 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/controllers/SresponderController.php (147)
+in /var/www/htdocs/protected/controllers/SresponderController.php (107)
+2014/04/27 21:27:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/controllers/SresponderController.php(147): Spatient->markQuestionYesForPatient('4', 'add-patient')
+#3 /var/www/htdocs/protected/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('4', 'add-patient')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/Sresponder/record
+---
+2014/04/27 21:27:49 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/controllers/SresponderController.php (147)
+in /var/www/htdocs/protected/controllers/SresponderController.php (107)
+2014/04/27 21:27:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/controllers/SresponderController.php(147): Spatient->markQuestionYesForPatient('4', 'add-patient')
+#3 /var/www/htdocs/protected/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('4', 'add-patient')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/Sresponder/record
+---
+2014/04/27 21:45:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sresponder/default/add".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('sresponder/defa...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/sresponder/default/add
+---
+2014/04/27 21:45:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sresponder/default/add".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('sresponder/defa...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/sresponder/default/add
+---
+2014/04/27 21:45:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sresponder/sresponder/add".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('sresponder/sres...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/sresponder/sresponder/add
+---
+2014/04/27 21:48:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sresponder/sresponder/add".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('sresponder/sres...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/sresponder/sresponder/add
+---
+2014/04/27 21:48:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sresponder/sresponder/questions".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('sresponder/sres...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/sresponder/sresponder/questions
+---
+2014/04/27 21:51:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sresponder//questions".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('sresponder//que...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/sresponder//questions
+---
+2014/04/27 21:51:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sresponder/questions".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('sresponder/ques...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/sresponder/questions
+---
+2014/04/27 21:52:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "questions".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('questions')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('questions')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/sresponder/questions
+---
+2014/04/27 21:55:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "questions".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('questions')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('questions')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/sresponder/questions
+---
+2014/04/27 21:55:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "respond".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('respond')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('respond')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/sresponder/respond
+---
+2014/04/27 21:55:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "respond".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('respond')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('respond')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/sresponder/respond
+---
+2014/04/27 21:55:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "recor".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('recor')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('recor')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/sresponder/recor
+---
+2014/04/27 21:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "recor".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('recor')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('recor')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/sresponder/recor
+---
+2014/04/27 21:57:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "submissions".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('submissions')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('submissions')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/sresponder/submissions
+---
+2014/04/27 21:58:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "submissions".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('submissions')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('submissions')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/sresponder/submissions
+---
+2014/04/27 21:58:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/controllers/SresponderController.php (147)
+in /var/www/htdocs/protected/controllers/SresponderController.php (107)
+2014/04/27 21:58:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/controllers/SresponderController.php(147): Spatient->markQuestionYesForPatient('4', 'upload-photo')
+#3 /var/www/htdocs/protected/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('4', 'upload-photo')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/27 21:58:59 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/controllers/SresponderController.php (147)
+in /var/www/htdocs/protected/controllers/SresponderController.php (107)
+2014/04/27 21:58:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/controllers/SresponderController.php(147): Spatient->markQuestionYesForPatient('4', 'add-patient')
+#3 /var/www/htdocs/protected/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('4', 'add-patient')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/27 22:37:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/site/login
+---
+2014/04/27 22:37:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/index".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/site/index
+---
+2014/04/27 22:37:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/index.php".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/site/index.php
+---
+2014/04/27 22:38:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/index.php".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/site/index.php
+---
+2014/04/27 22:38:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/index.php".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/site/index.php
+---
+2014/04/27 22:40:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/index".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/site/index
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/27 22:43:28 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/htdocs/protected/modules/site/controllers/DefaultController.php(7): CController->render('index')
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2014/04/27 22:43:50 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/htdocs/protected/modules/site/controllers/DefaultController.php(7): CController->render('index')
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2014/04/27 22:46:19 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/htdocs/protected/modules/site/controllers/DefaultController.php(7): CController->render('index')
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2014/04/27 22:46:22 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/htdocs/protected/modules/site/controllers/DefaultController.php(7): CController->render('index')
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2014/04/27 22:46:43 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/htdocs/protected/modules/site/controllers/DefaultController.php(7): CController->render('index')
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2014/04/27 22:46:46 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/htdocs/protected/modules/site/controllers/DefaultController.php(7): CController->render('index')
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2014/04/27 22:47:54 [error] [exception.CException] exception 'CException' with message 'Alias "site.SiteModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii_framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/yii_framework/YiiBase.php(196): YiiBase::import('site.SiteModule', true)
+#1 /var/www/yii_framework/base/CModule.php(282): YiiBase::createComponent('site.SiteModule', 'site', NULL, Array)
+#2 /var/www/yii_framework/web/CWebApplication.php(337): CModule->getModule('site')
+#3 /var/www/yii_framework/web/CWebApplication.php(276): CWebApplication->createController('')
+#4 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#5 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/htdocs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/
+---
+2014/04/27 22:48:30 [error] [exception.CException] exception 'CException' with message 'Alias "site.SiteModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii_framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/yii_framework/YiiBase.php(196): YiiBase::import('site.SiteModule', true)
+#1 /var/www/yii_framework/base/CModule.php(282): YiiBase::createComponent('site.SiteModule', 'site', NULL, Array)
+#2 /var/www/yii_framework/web/CWebApplication.php(337): CModule->getModule('site')
+#3 /var/www/yii_framework/web/CWebApplication.php(276): CWebApplication->createController('')
+#4 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#5 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/htdocs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/
+---
+2014/04/27 22:49:14 [error] [exception.CException] exception 'CException' with message 'Alias "site.SiteModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii_framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/yii_framework/YiiBase.php(196): YiiBase::import('site.SiteModule', true)
+#1 /var/www/yii_framework/base/CModule.php(282): YiiBase::createComponent('site.SiteModule', 'site', NULL, Array)
+#2 /var/www/yii_framework/web/CWebApplication.php(337): CModule->getModule('site')
+#3 /var/www/yii_framework/web/CWebApplication.php(276): CWebApplication->createController('')
+#4 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#5 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/htdocs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/
+---
+2014/04/27 22:49:36 [error] [exception.CException] exception 'CException' with message 'Alias "site.SiteModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii_framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/yii_framework/YiiBase.php(196): YiiBase::import('site.SiteModule', true)
+#1 /var/www/yii_framework/base/CModule.php(282): YiiBase::createComponent('site.SiteModule', 'site', NULL, Array)
+#2 /var/www/yii_framework/web/CWebApplication.php(337): CModule->getModule('site')
+#3 /var/www/yii_framework/web/CWebApplication.php(276): CWebApplication->createController('')
+#4 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#5 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/htdocs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/
+---
+2014/04/27 22:49:42 [error] [exception.CException] exception 'CException' with message 'Alias "site.SiteModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii_framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/yii_framework/YiiBase.php(196): YiiBase::import('site.SiteModule', true)
+#1 /var/www/yii_framework/base/CModule.php(282): YiiBase::createComponent('site.SiteModule', 'site', NULL, Array)
+#2 /var/www/yii_framework/web/CWebApplication.php(337): CModule->getModule('site')
+#3 /var/www/yii_framework/web/CWebApplication.php(276): CWebApplication->createController('')
+#4 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#5 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/htdocs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php
+---
+2014/04/27 23:23:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('login')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('login')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/defau...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/default/login
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/login
+---
+2014/04/27 23:31:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "hospital".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('hospital')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('hospital')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/hospital/default/hospital/default/index
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/login
+---
+2014/04/27 23:33:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "default".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('default')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('default')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/hospital/default/default/index
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/login
+---
+2014/04/27 23:37:53 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "login".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#1 /var/www/htdocs/protected/modules/admin/controllers/DefaultController.php(139): CController->render('login', Array)
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionLogin()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('login')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/l...')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/admin/default/login
+HTTP_REFERER=http://snap.colorado.edu/index.php/site/login
+---
+2014/04/27 23:38:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/admin/default/login".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('admin/admin/def...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admin/admin/default/login
+HTTP_REFERER=http://snap.colorado.edu/index.php/admin/default/managequestions
+---
+2014/04/27 23:39:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/admin/default/login".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('admin/admin/def...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admin/admin/default/login
+HTTP_REFERER=http://snap.colorado.edu/index.php/admin/default/managequestions
+---
+2014/04/27 23:39:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/admin/default/login".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('admin/admin/def...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admin/admin/default/login
+HTTP_REFERER=http://snap.colorado.edu/index.php/admin/default/managequestions
+---
+2014/04/27 23:40:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/admin/default/login".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('admin/admin/def...')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admin/admin/default/login
+HTTP_REFERER=http://snap.colorado.edu/index.php/admin/default/managequestions
+---
+2014/04/27 23:40:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "default/login".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('default/login')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/default/login
+HTTP_REFERER=http://snap.colorado.edu/index.php/admin/default/managequestions
+---
+2014/04/27 23:41:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "default/login".' in /var/www/yii_framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('default/login')
+#1 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/htdocs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/default/login
+HTTP_REFERER=http://snap.colorado.edu/index.php/admin/default/login
+---
+2014/04/27 23:41:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "questions".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('questions')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('questions')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/q...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admin/default/questions
+HTTP_REFERER=http://snap.colorado.edu/index.php/admin/default/login
+---
+2014/04/27 23:54:05 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "login".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#1 /var/www/htdocs/protected/controllers/SiteController.php(104): CController->render('login', Array)
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): SiteController->actionMembers()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('members')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('site/members')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/site/members
+HTTP_REFERER=http://snap.colorado.edu/index.php
+---
+2014/04/28 00:32:33 [error] [exception.CException] exception 'CException' with message 'Patient has an invalid validation rule. The rule must specify attributes to be validated and the validator name.' in /var/www/yii_framework/base/CModel.php:289
+Stack trace:
+#0 /var/www/yii_framework/base/CModel.php(260): CModel->createValidators()
+#1 /var/www/yii_framework/base/CModel.php(304): CModel->getValidators('name')
+#2 /var/www/yii_framework/web/helpers/CHtml.php(1414): CModel->isAttributeRequired('name')
+#3 /var/www/yii_framework/web/widgets/CActiveForm.php(597): CHtml::activeLabelEx(Object(Patient), 'name', Array)
+#4 /var/www/htdocs/protected/modules/responder/views/default/_form.php(23): CActiveForm->labelEx(Object(Patient), 'name')
+#5 /var/www/yii_framework/web/CBaseController.php(126): require('/var/www/htdocs...')
+#6 /var/www/yii_framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/htdocs...', Array, true)
+#7 /var/www/yii_framework/web/CController.php(869): CBaseController->renderFile('/var/www/htdocs...', Array, true)
+#8 /var/www/htdocs/protected/modules/responder/views/default/create.php(14): CController->renderPartial('_form', Array)
+#9 /var/www/yii_framework/web/CBaseController.php(126): require('/var/www/htdocs...')
+#10 /var/www/yii_framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/htdocs...', Array, true)
+#11 /var/www/yii_framework/web/CController.php(869): CBaseController->renderFile('/var/www/htdocs...', Array, true)
+#12 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#13 /var/www/htdocs/protected/modules/responder/controllers/DefaultController.php(51): CController->render('create', Array)
+#14 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionCreate()
+#15 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('create')
+#19 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/defau...')
+#20 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/htdocs/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/responder/default/create
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/default/login
+---
+2014/04/28 00:32:33 [error] [exception.CException] exception 'CException' with message 'Patient has an invalid validation rule. The rule must specify attributes to be validated and the validator name.' in /var/www/yii_framework/base/CModel.php:289
+Stack trace:
+#0 /var/www/yii_framework/base/CModel.php(260): CModel->createValidators()
+#1 /var/www/yii_framework/base/CModel.php(304): CModel->getValidators('name')
+#2 /var/www/yii_framework/web/helpers/CHtml.php(1414): CModel->isAttributeRequired('name')
+#3 /var/www/yii_framework/web/widgets/CActiveForm.php(597): CHtml::activeLabelEx(Object(Patient), 'name', Array)
+#4 /var/www/htdocs/protected/modules/responder/views/default/_form.php(23): CActiveForm->labelEx(Object(Patient), 'name')
+#5 /var/www/yii_framework/web/CBaseController.php(126): require('/var/www/htdocs...')
+#6 /var/www/yii_framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/htdocs...', Array, true)
+#7 /var/www/yii_framework/web/CController.php(869): CBaseController->renderFile('/var/www/htdocs...', Array, true)
+#8 /var/www/htdocs/protected/modules/responder/views/default/create.php(14): CController->renderPartial('_form', Array)
+#9 /var/www/yii_framework/web/CBaseController.php(126): require('/var/www/htdocs...')
+#10 /var/www/yii_framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/htdocs...', Array, true)
+#11 /var/www/yii_framework/web/CController.php(869): CBaseController->renderFile('/var/www/htdocs...', Array, true)
+#12 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#13 /var/www/htdocs/protected/modules/responder/controllers/DefaultController.php(51): CController->render('create', Array)
+#14 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionCreate()
+#15 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('create')
+#19 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/defau...')
+#20 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/htdocs/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/responder/default/create
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/default/login
+---
+2014/04/28 11:32:48 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/controllers/SresponderController.php (147)
+in /var/www/htdocs/protected/controllers/SresponderController.php (107)
+2014/04/28 11:32:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/controllers/SresponderController.php(147): Spatient->markQuestionYesForPatient('4', 'upload-photo')
+#3 /var/www/htdocs/protected/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('4', 'upload-photo')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/28 11:32:48 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/controllers/SresponderController.php (147)
+in /var/www/htdocs/protected/controllers/SresponderController.php (107)
+2014/04/28 11:32:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/controllers/SresponderController.php(147): Spatient->markQuestionYesForPatient('4', 'upload-photo')
+#3 /var/www/htdocs/protected/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('4', 'upload-photo')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/28 11:32:50 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/controllers/SresponderController.php (147)
+in /var/www/htdocs/protected/controllers/SresponderController.php (107)
+2014/04/28 11:32:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/controllers/SresponderController.php(147): Spatient->markQuestionYesForPatient('4', 'upload-photo')
+#3 /var/www/htdocs/protected/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('4', 'upload-photo')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/28 11:32:50 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/controllers/SresponderController.php (147)
+in /var/www/htdocs/protected/controllers/SresponderController.php (107)
+2014/04/28 11:32:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/controllers/SresponderController.php(147): Spatient->markQuestionYesForPatient('4', 'upload-photo')
+#3 /var/www/htdocs/protected/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('4', 'upload-photo')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/28 18:33:06 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/controllers/SresponderController.php (147)
+in /var/www/htdocs/protected/controllers/SresponderController.php (107)
+2014/04/28 18:33:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/controllers/SresponderController.php(147): Spatient->markQuestionYesForPatient('3', 'upload-photo')
+#3 /var/www/htdocs/protected/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('3', 'upload-photo')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/28 18:33:06 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/controllers/SresponderController.php (147)
+in /var/www/htdocs/protected/controllers/SresponderController.php (107)
+2014/04/28 18:33:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/controllers/SresponderController.php(147): Spatient->markQuestionYesForPatient('3', 'upload-photo')
+#3 /var/www/htdocs/protected/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('3', 'upload-photo')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/28 18:33:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/controllers/SresponderController.php (147)
+in /var/www/htdocs/protected/controllers/SresponderController.php (107)
+2014/04/28 18:33:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/controllers/SresponderController.php(147): Spatient->markQuestionYesForPatient('3', 'upload-photo')
+#3 /var/www/htdocs/protected/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('3', 'upload-photo')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/28 18:33:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/controllers/SresponderController.php (147)
+in /var/www/htdocs/protected/controllers/SresponderController.php (107)
+2014/04/28 18:33:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/controllers/SresponderController.php(147): Spatient->markQuestionYesForPatient('3', 'upload-photo')
+#3 /var/www/htdocs/protected/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('3', 'upload-photo')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/28 18:33:08 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/controllers/SresponderController.php (147)
+in /var/www/htdocs/protected/controllers/SresponderController.php (107)
+2014/04/28 18:33:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/controllers/SresponderController.php(147): Spatient->markQuestionYesForPatient('3', 'upload-photo')
+#3 /var/www/htdocs/protected/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('3', 'upload-photo')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/28 18:33:08 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/controllers/SresponderController.php (147)
+in /var/www/htdocs/protected/controllers/SresponderController.php (107)
+2014/04/28 18:33:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/controllers/SresponderController.php(147): Spatient->markQuestionYesForPatient('3', 'upload-photo')
+#3 /var/www/htdocs/protected/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('3', 'upload-photo')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/28 23:16:56 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii_framework/web/CController.php:336
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#4 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#5 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/htdocs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?=2
+---
+2014/04/28 23:17:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii_framework/web/CController.php:336
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#4 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#5 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/htdocs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?=2
+---
+2014/04/28 23:17:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii_framework/web/CController.php:336
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#4 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#5 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/htdocs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?=2
+---
+2014/04/29 00:19:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii_framework/web/CController.php:336
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('ShowYes')
+#4 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#5 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/htdocs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/hospital/default/ShowYes/id/3
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:19:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii_framework/web/CController.php:336
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('ShowYes')
+#4 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#5 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/htdocs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/hospital/default/ShowYes/id/2
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:28:54 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('questions', Array, true)
+#1 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->render('questions', Array)
+#2 [internal function]: DefaultController->actionShowyes('3')
+#3 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=3
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:28:54 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('questions', Array, true)
+#1 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->render('questions', Array)
+#2 [internal function]: DefaultController->actionShowyes('3')
+#3 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=3
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:28:55 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('questions', Array, true)
+#1 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->render('questions', Array)
+#2 [internal function]: DefaultController->actionShowyes('6')
+#3 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=6
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:28:55 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('questions', Array, true)
+#1 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->render('questions', Array)
+#2 [internal function]: DefaultController->actionShowyes('6')
+#3 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=6
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:28:56 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('questions', Array, true)
+#1 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->render('questions', Array)
+#2 [internal function]: DefaultController->actionShowyes('5')
+#3 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=5
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:28:56 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('questions', Array, true)
+#1 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->render('questions', Array)
+#2 [internal function]: DefaultController->actionShowyes('5')
+#3 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=5
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:31:23 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->renderPartial('questions', Array)
+#1 [internal function]: DefaultController->actionShowyes('2')
+#2 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=2
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:31:24 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->renderPartial('questions', Array)
+#1 [internal function]: DefaultController->actionShowyes('2')
+#2 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=2
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:31:25 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->renderPartial('questions', Array)
+#1 [internal function]: DefaultController->actionShowyes('6')
+#2 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=6
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:31:25 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->renderPartial('questions', Array)
+#1 [internal function]: DefaultController->actionShowyes('6')
+#2 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=6
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:31:26 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->renderPartial('questions', Array)
+#1 [internal function]: DefaultController->actionShowyes('3')
+#2 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=3
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:31:26 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->renderPartial('questions', Array)
+#1 [internal function]: DefaultController->actionShowyes('3')
+#2 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=3
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:32:01 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->renderPartial('questions', Array)
+#1 [internal function]: DefaultController->actionShowyes('3')
+#2 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=3
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:32:01 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->renderPartial('questions', Array)
+#1 [internal function]: DefaultController->actionShowyes('3')
+#2 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=3
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:32:38 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->renderPartial('questions', Array)
+#1 [internal function]: DefaultController->actionShowyes('2')
+#2 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=2
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:32:38 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->renderPartial('questions', Array)
+#1 [internal function]: DefaultController->actionShowyes('2')
+#2 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=2
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:32:39 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->renderPartial('questions', Array)
+#1 [internal function]: DefaultController->actionShowyes('6')
+#2 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=6
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:32:39 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->renderPartial('questions', Array)
+#1 [internal function]: DefaultController->actionShowyes('6')
+#2 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=6
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:33:12 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->renderPartial('questions', Array)
+#1 [internal function]: DefaultController->actionShowyes('3')
+#2 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=3
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:33:12 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->renderPartial('questions', Array)
+#1 [internal function]: DefaultController->actionShowyes('3')
+#2 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=3
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:33:13 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->renderPartial('questions', Array)
+#1 [internal function]: DefaultController->actionShowyes('6')
+#2 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=6
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:33:13 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->renderPartial('questions', Array)
+#1 [internal function]: DefaultController->actionShowyes('6')
+#2 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=6
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:37:28 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->renderPartial('questions', Array)
+#1 [internal function]: DefaultController->actionShowyes('3')
+#2 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=3
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:37:28 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->renderPartial('questions', Array)
+#1 [internal function]: DefaultController->actionShowyes('3')
+#2 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=3
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:37:29 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->renderPartial('questions', Array)
+#1 [internal function]: DefaultController->actionShowyes('5')
+#2 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=5
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 00:37:29 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "questions".' in /var/www/yii_framework/web/CController.php:878
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(166): CController->renderPartial('questions', Array)
+#1 [internal function]: DefaultController->actionShowyes('5')
+#2 /var/www/yii_framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('showyes')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/hospital/default/showyes?patientId=5
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 01:01:26 [error] [exception.CException] exception 'CException' with message 'CActiveDataProvider and its behaviors do not have a method or closure named "unsetAttributes".' in /var/www/yii_framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(24): CComponent->__call('unsetAttributes', Array)
+#1 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(24): CActiveDataProvider->unsetAttributes()
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/hospital/default/index
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/login
+---
+2014/04/29 01:01:26 [error] [exception.CException] exception 'CException' with message 'CActiveDataProvider and its behaviors do not have a method or closure named "unsetAttributes".' in /var/www/yii_framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(24): CComponent->__call('unsetAttributes', Array)
+#1 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(24): CActiveDataProvider->unsetAttributes()
+#2 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#8 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/htdocs/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/hospital/default/index
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/login
+---
+2014/04/29 08:24:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/controllers/SresponderController.php (147)
+in /var/www/htdocs/protected/controllers/SresponderController.php (107)
+2014/04/29 08:24:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/controllers/SresponderController.php(147): Spatient->markQuestionYesForPatient('4', 'upload-photo')
+#3 /var/www/htdocs/protected/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('4', 'upload-photo')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/29 08:24:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/controllers/SresponderController.php (147)
+in /var/www/htdocs/protected/controllers/SresponderController.php (107)
+2014/04/29 08:24:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/controllers/SresponderController.php(147): Spatient->markQuestionYesForPatient('4', 'upload-photo')
+#3 /var/www/htdocs/protected/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('4', 'upload-photo')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/29 12:24:39 [error] [exception.CException] exception 'CException' with message 'Property "CGridView.0" is not defined.' in /var/www/yii_framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/yii_framework/web/CWidgetFactory.php(161): CComponent->__set('0', 'updateABlock')
+#1 /var/www/yii_framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(DefaultController), 'zii.widgets.gri...', Array)
+#2 /var/www/yii_framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 /var/www/htdocs/protected/modules/hospital/views/default/index.php(63): CBaseController->widget('zii.widgets.gri...', Array)
+#4 /var/www/yii_framework/web/CBaseController.php(126): require('/var/www/htdocs...')
+#5 /var/www/yii_framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/htdocs...', Array, true)
+#6 /var/www/yii_framework/web/CController.php(869): CBaseController->renderFile('/var/www/htdocs...', Array, true)
+#7 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(34): CController->render('index', Array)
+#9 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#10 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#15 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/htdocs/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/hospital/default/index
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 12:24:39 [error] [exception.CException] exception 'CException' with message 'Property "CGridView.0" is not defined.' in /var/www/yii_framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/yii_framework/web/CWidgetFactory.php(161): CComponent->__set('0', 'updateABlock')
+#1 /var/www/yii_framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(DefaultController), 'zii.widgets.gri...', Array)
+#2 /var/www/yii_framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 /var/www/htdocs/protected/modules/hospital/views/default/index.php(63): CBaseController->widget('zii.widgets.gri...', Array)
+#4 /var/www/yii_framework/web/CBaseController.php(126): require('/var/www/htdocs...')
+#5 /var/www/yii_framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/htdocs...', Array, true)
+#6 /var/www/yii_framework/web/CController.php(869): CBaseController->renderFile('/var/www/htdocs...', Array, true)
+#7 /var/www/yii_framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/htdocs/protected/modules/hospital/controllers/DefaultController.php(34): CController->render('index', Array)
+#9 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#10 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('hospital/defaul...')
+#15 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/htdocs/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/hospital/default/index
+HTTP_REFERER=http://snap.colorado.edu/index.php/hospital/default/index
+---
+2014/04/29 20:38:22 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php (154)
+in /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php (107)
+2014/04/29 20:38:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php(154): Spatient->markQuestionYesForPatient('3', 'upload-photo')
+#3 /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('3', 'upload-photo')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/29 22:29:15 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`SNAP`.`question`, CONSTRAINT `question_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `question` (`id`)). The SQL statement executed was: DELETE FROM `question` WHERE id=:id.
+in /var/www/htdocs/protected/models/Squestion.php (55)
+in /var/www/htdocs/protected/modules/admin/controllers/DefaultController.php (79)
+in /var/www/htdocs/index.php (13)
+2014/04/29 22:29:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`SNAP`.`question`, CONSTRAINT `question_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `question` (`id`)). The SQL statement executed was: DELETE FROM `question` WHERE id=:id' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1302): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Squestion.php(55): CDbCommand->delete('question', 'id=:id', Array)
+#2 /var/www/htdocs/protected/modules/admin/controllers/DefaultController.php(79): Squestion->deleteQuestion('9')
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionManageQuestions()
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('managequestions')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/m...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/admin/default/managequestions
+HTTP_REFERER=http://snap.colorado.edu/index.php/admin/default/managequestions
+---
+2014/04/29 23:05:03 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`SNAP`.`question`, CONSTRAINT `question_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `question` (`id`)). The SQL statement executed was: DELETE FROM `question` WHERE id=:id.
+in /var/www/htdocs/protected/models/Squestion.php (55)
+in /var/www/htdocs/protected/modules/admin/controllers/DefaultController.php (79)
+in /var/www/htdocs/index.php (13)
+2014/04/29 23:05:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`SNAP`.`question`, CONSTRAINT `question_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `question` (`id`)). The SQL statement executed was: DELETE FROM `question` WHERE id=:id' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1302): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Squestion.php(55): CDbCommand->delete('question', 'id=:id', Array)
+#2 /var/www/htdocs/protected/modules/admin/controllers/DefaultController.php(79): Squestion->deleteQuestion('54')
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionManageQuestions()
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('managequestions')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/m...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/admin/default/managequestions
+HTTP_REFERER=http://snap.colorado.edu/index.php/admin/default/managequestions
+---
+2014/04/29 23:05:22 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: DELETE FROM `question` WHERE id=:id.
+in /var/www/htdocs/protected/models/Squestion.php (55)
+in /var/www/htdocs/protected/modules/admin/controllers/DefaultController.php (79)
+in /var/www/htdocs/index.php (13)
+2014/04/29 23:05:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: DELETE FROM `question` WHERE id=:id' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1302): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Squestion.php(55): CDbCommand->delete('question', 'id=:id', Array)
+#2 /var/www/htdocs/protected/modules/admin/controllers/DefaultController.php(79): Squestion->deleteQuestion('58')
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionManageQuestions()
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('managequestions')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/m...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/admin/default/managequestions
+HTTP_REFERER=http://snap.colorado.edu/index.php/admin/default/managequestions
+---
+2014/04/29 23:05:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: DELETE FROM `question` WHERE id=:id.
+in /var/www/htdocs/protected/models/Squestion.php (55)
+in /var/www/htdocs/protected/modules/admin/controllers/DefaultController.php (79)
+in /var/www/htdocs/index.php (13)
+2014/04/29 23:05:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: DELETE FROM `question` WHERE id=:id' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1302): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Squestion.php(55): CDbCommand->delete('question', 'id=:id', Array)
+#2 /var/www/htdocs/protected/modules/admin/controllers/DefaultController.php(79): Squestion->deleteQuestion('58')
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionManageQuestions()
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('managequestions')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/m...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/admin/default/managequestions
+HTTP_REFERER=http://snap.colorado.edu/index.php/admin/default/managequestions
+---
+2014/04/29 23:06:01 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: DELETE FROM `question` WHERE id=:id.
+in /var/www/htdocs/protected/models/Squestion.php (55)
+in /var/www/htdocs/protected/modules/admin/controllers/DefaultController.php (79)
+in /var/www/htdocs/index.php (13)
+2014/04/29 23:06:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: DELETE FROM `question` WHERE id=:id' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1302): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Squestion.php(55): CDbCommand->delete('question', 'id=:id', Array)
+#2 /var/www/htdocs/protected/modules/admin/controllers/DefaultController.php(79): Squestion->deleteQuestion('58')
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionManageQuestions()
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('managequestions')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/m...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/admin/default/managequestions
+HTTP_REFERER=http://snap.colorado.edu/index.php/admin/default/managequestions
+---
+2014/04/29 23:08:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: DELETE FROM `question` WHERE id=:id.
+in /var/www/htdocs/protected/models/Squestion.php (55)
+in /var/www/htdocs/protected/modules/admin/controllers/DefaultController.php (79)
+in /var/www/htdocs/index.php (13)
+2014/04/29 23:08:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: DELETE FROM `question` WHERE id=:id' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1302): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Squestion.php(55): CDbCommand->delete('question', 'id=:id', Array)
+#2 /var/www/htdocs/protected/modules/admin/controllers/DefaultController.php(79): Squestion->deleteQuestion('58')
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionManageQuestions()
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('managequestions')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/m...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/admin/default/managequestions
+HTTP_REFERER=http://snap.colorado.edu/index.php/admin/default/managequestions
+---
+2014/04/29 23:08:47 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: DELETE FROM `question` WHERE id=:id.
+in /var/www/htdocs/protected/models/Squestion.php (55)
+in /var/www/htdocs/protected/modules/admin/controllers/DefaultController.php (79)
+in /var/www/htdocs/index.php (13)
+2014/04/29 23:08:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: DELETE FROM `question` WHERE id=:id' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1302): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Squestion.php(55): CDbCommand->delete('question', 'id=:id', Array)
+#2 /var/www/htdocs/protected/modules/admin/controllers/DefaultController.php(79): Squestion->deleteQuestion('52')
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionManageQuestions()
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('managequestions')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/m...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/admin/default/managequestions
+HTTP_REFERER=http://snap.colorado.edu/index.php/admin/default/managequestions
+---
+2014/04/29 23:18:01 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`SNAP`.`question`, CONSTRAINT `question_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `question` (`id`)). The SQL statement executed was: DELETE FROM `question` WHERE id=:id.
+in /var/www/htdocs/protected/models/Squestion.php (55)
+in /var/www/htdocs/protected/modules/admin/controllers/DefaultController.php (79)
+in /var/www/htdocs/index.php (13)
+2014/04/29 23:18:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`SNAP`.`question`, CONSTRAINT `question_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `question` (`id`)). The SQL statement executed was: DELETE FROM `question` WHERE id=:id' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1302): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Squestion.php(55): CDbCommand->delete('question', 'id=:id', Array)
+#2 /var/www/htdocs/protected/modules/admin/controllers/DefaultController.php(79): Squestion->deleteQuestion('42')
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionManageQuestions()
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('managequestions')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/m...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/admin/default/managequestions
+HTTP_REFERER=http://snap.colorado.edu/index.php/admin/default/managequestions
+---
+2014/04/29 23:19:00 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: DELETE FROM `question` WHERE id=:id.
+in /var/www/htdocs/protected/models/Squestion.php (55)
+in /var/www/htdocs/protected/modules/admin/controllers/DefaultController.php (79)
+in /var/www/htdocs/index.php (13)
+2014/04/29 23:19:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: DELETE FROM `question` WHERE id=:id' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1302): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Squestion.php(55): CDbCommand->delete('question', 'id=:id', Array)
+#2 /var/www/htdocs/protected/modules/admin/controllers/DefaultController.php(79): Squestion->deleteQuestion('43')
+#3 /var/www/yii_framework/web/actions/CInlineAction.php(49): DefaultController->actionManageQuestions()
+#4 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('managequestions')
+#8 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/m...')
+#9 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/htdocs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/admin/default/managequestions
+HTTP_REFERER=http://snap.colorado.edu/index.php/admin/default/managequestions
+---
+2014/04/29 23:37:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('index.php')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('index.php')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/sresponder/index.php/responder/Sresponder/uploadphoto
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/29 23:40:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('index.php')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('index.php')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/sresponder/index.php/responder/Sresponder/uploadphoto
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/30 01:09:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php (154)
+in /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php (107)
+2014/04/30 01:09:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php(154): Spatient->markQuestionYesForPatient('7', 'upload-photo')
+#3 /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('7', 'upload-photo')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/30 01:09:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php (154)
+in /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php (107)
+2014/04/30 01:09:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php(154): Spatient->markQuestionYesForPatient('7', 'upload-photo')
+#3 /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('7', 'upload-photo')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/30 09:06:41 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php (154)
+in /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php (107)
+2014/04/30 09:06:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php(154): Spatient->markQuestionYesForPatient('2', 'upload-photo')
+#3 /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('2', 'upload-photo')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/30 09:06:41 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php (154)
+in /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php (107)
+2014/04/30 09:06:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php(154): Spatient->markQuestionYesForPatient('2', 'upload-photo')
+#3 /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('2', 'upload-photo')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/30 09:06:49 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php (154)
+in /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php (107)
+2014/04/30 09:06:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php(154): Spatient->markQuestionYesForPatient('2', 'upload-photo')
+#3 /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('2', 'upload-photo')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/30 09:06:49 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime).
+in /var/www/htdocs/protected/models/Spatient.php (38)
+in /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php (154)
+in /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php (107)
+2014/04/30 09:06:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`SNAP`.`patient_question`, CONSTRAINT `patient_question_ibfk_6` FOREIGN KEY (`question_id`) REFERENCES `question` (`id`)). The SQL statement executed was: INSERT INTO `patient_question` (`patient_id`, `question_id`, `answered_by`, `answer`, `deleted`, `deleted_by`, `deleted_datetime`) VALUES (:patient_id, :question_id, :answered_by, :answer, :deleted, :deleted_by, :deleted_datetime)' in /var/www/yii_framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii_framework/db/CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 /var/www/htdocs/protected/models/Spatient.php(38): CDbCommand->insert('patient_questio...', Array)
+#2 /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php(154): Spatient->markQuestionYesForPatient('2', 'upload-photo')
+#3 /var/www/htdocs/protected/modules/responder/controllers/SresponderController.php(107): SresponderController->markQuestionYesForPatient('2', 'upload-photo')
+#4 /var/www/yii_framework/web/actions/CInlineAction.php(49): SresponderController->actionRecord()
+#5 /var/www/yii_framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('record')
+#9 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#10 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/htdocs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/responder/Sresponder/record
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/30 09:30:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('index.php')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('index.php')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/sresponder/index.php/responder/Sresponder/uploadphoto
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/30 09:33:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uploadphoto".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('uploadphoto')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('uploadphoto')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/Sresponder/uploadphoto
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/30 10:59:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uploadphoto".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('uploadphoto')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('uploadphoto')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/Sresponder/uploadphoto
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/30 11:04:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uploadphoto".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('uploadphoto')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('uploadphoto')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/Sresponder/uploadphoto
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/30 11:05:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uploadphoto".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('uploadphoto')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('uploadphoto')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/Sresponder/uploadphoto
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/30 11:05:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uploadphoto".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('uploadphoto')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('uploadphoto')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/Sresponder/uploadphoto
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/30 11:05:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uploadphoto".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('uploadphoto')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('uploadphoto')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/Sresponder/uploadphoto
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/30 11:06:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uploadphoto".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('uploadphoto')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('uploadphoto')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/Sresponder/uploadphoto
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/30 11:07:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uploadphoto".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('uploadphoto')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('uploadphoto')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/Sresponder/uploadphoto
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/30 11:07:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uploadphoto".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('uploadphoto')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('uploadphoto')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/Sresponder/uploadphoto
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/30 11:09:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uploadphoto".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('uploadphoto')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('uploadphoto')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/Sresponder/uploadphoto
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/30 11:10:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uploadphoto".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('uploadphoto')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('uploadphoto')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/Sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/Sresponder/uploadphoto
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/30 11:10:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uploadphoto".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('uploadphoto')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('uploadphoto')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/sresponder/uploadphoto
+---
+2014/04/30 11:12:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uploadphoto".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('uploadphoto')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('uploadphoto')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/sresponder/uploadphoto
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/30 11:12:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uploadphoto".' in /var/www/yii_framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(270): CController->missingAction('uploadphoto')
+#1 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('uploadphoto')
+#2 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/sresp...')
+#3 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/htdocs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/responder/sresponder/uploadphoto
+HTTP_REFERER=http://snap.colorado.edu/index.php/responder/sresponder/record
+---
+2014/04/30 11:12:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii_framework/web/CController.php:336
+Stack trace:
+#0 /var/www/yii_framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii_framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii_framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/yii_framework/web/CWebApplication.php(282): CController->run('getyes')
+#4 /var/www/yii_framework/web/CWebApplication.php(141): CWebApplication->runController('responder/sresp...')
+#5 /var/www/yii_framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/htdocs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/responder/sresponder/getyes
+---

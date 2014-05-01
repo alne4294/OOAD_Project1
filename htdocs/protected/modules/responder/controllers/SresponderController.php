@@ -69,6 +69,36 @@ class SresponderController extends Controller
             
         }
         
+	public function actionUploadphoto()
+        {
+            
+            define("IMAGE_SAVE_LOCATION", '/var/www/htdocs/images/patient_photos/');
+            define("IMAGE_EXTENSION", '.jpg');
+
+            $errorMessages = array();
+
+            if(isset($_POST['patientId']) && $_POST['patientId'] != '') {
+                
+                $patientId = $_POST['patientId'];
+
+                $newImagePath = IMAGE_SAVE_LOCATION .  $_POST['patientId'] . IMAGE_EXTENSION;
+
+                // Move image from where Apache automatically puts it into a new location where browser can retrieve it by patientId.
+                $imageMoveStatus = rename($_FILES['file']['tmp_name'], $newImagePath);
+
+                if(!$imageMoveStatus) {
+                    $errorMessages[] = "Image failed to upload image.";
+                }
+            } else {
+                $errorMessages[] = "No patientId was given image upload.";
+            }
+            
+            $response = $this->showQuestions($errorMessages, $patientId);
+
+            echo $response;
+            
+	}
+        
 	public function actionRecord()
         {
             

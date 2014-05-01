@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US"> 
+<!DOCTYPE HTML>
+<html>
  
   <!-- BEGIN HEAD --> 
   <head profile="http://gmpg.org/xfn/11"> 
@@ -62,7 +62,7 @@
 			'items'=>array(
 				array('label'=>'Site Home', 'url'=>array('/site/index')),
                                 array('label'=>'View Patients', 'url'=>array('/responder/default/index/')),
-				array('label'=>'New Patient', 'url'=>array('/responder/default/create/')),
+//				array('label'=>'New Patient', 'url'=>array('/responder/default/create/')),
                                 array('label'=>'Add Patient Info', 'url'=>array('/responder/sresponder/record')),
 				array('label'=>'Login', 'url'=>array('/responder/default/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/responder/default/logout'), 'visible'=>!Yii::app()->user->isGuest)

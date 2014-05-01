@@ -27,7 +27,11 @@ class DefaultController extends Controller
                 $dataProvider->attributes=$_GET['Patient'];
 	    
             $this->render('index', array(
-                'model'=>$model, 'dataProvider'=>$dataProvider));
+                'model'=>$model, 
+                'dataProvider'=>$dataProvider, 
+                'errorMessages' => $errorMessages,
+                'patientId' => $patientId,
+                'questionTreeHtml' => $questionTreeHtml));
 	}
         
          /**
@@ -49,10 +53,6 @@ class DefaultController extends Controller
 	}
 
         public function actionQuestionUpdate($id = null) {
-//            $model = Patient::model()->findByPk($id);
-//            if ($model === null)
-//                throw new CHttpException(404, 'The requested page does not exist.');
-
             $this->renderPartial('_questions', array('patientId' => $id));
             Yii::app()->end();
         }
@@ -65,6 +65,12 @@ class DefaultController extends Controller
             $this->renderPartial('_view', array('model' => $model));
             Yii::app()->end();
         }
+
+        public function actionImageUpdate($id = null) {
+            $this->renderPartial('_image', array('patientId' => $id));
+            Yii::app()->end();
+        }
+        
         
         	/**
 	 * Displays the login page
@@ -148,6 +154,7 @@ class DefaultController extends Controller
             $patientsJsonString = json_encode($patientsArray);
                 
             echo $patientsJsonString;
+            Yii::app()->end();
             
         }
         

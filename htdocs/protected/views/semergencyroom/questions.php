@@ -1,9 +1,9 @@
 <?php
 
 $this->pageTitle=Yii::app()->name . ' - Answer Medical Questions About Patient';
-//$this->breadcrumbs=array(
-//	"View Questions for Patient $patientId",
-//);
+$this->breadcrumbs=array(
+	"View Questions for Patient $patientId",
+);
 ?>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>
@@ -86,4 +86,10 @@ $this->pageTitle=Yii::app()->name . ' - Answer Medical Questions About Patient';
             <?php echo $questionTreeHtml; ?>
         </li>
     </ul>
+</div>
+
+<br />
+
+<div id="image">
+    <img width="400" src="/images/patient_photos/<?php echo $patientId; ?>.jpg";
 </div>

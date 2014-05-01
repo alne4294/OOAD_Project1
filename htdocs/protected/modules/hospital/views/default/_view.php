@@ -11,8 +11,9 @@
     <?php $this->widget('zii.widgets.CDetailView', array(
             'data'=>$model,
             'cssFile' => Yii::app()->theme->baseUrl . '/css/hospitaldvstyles.css',
-//            'htmlOptions'=>array('width'=>'40px'),
+            'htmlOptions'=>array('width'=>'40px'),
             'attributes'=>array(
+                    'timestamp',
 //                    'id',
 //                    'name',
 //                    'last',
@@ -26,7 +27,7 @@
                     'state',
                     'zip',
                     'country',
-                    'timestamp',
+                    
             ),
     )); ?>
     

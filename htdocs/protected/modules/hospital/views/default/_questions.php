@@ -22,7 +22,7 @@
 
     function getQuestionMarkedYesForPatient(patientId) {
         $.ajax({ type: "GET", 
-            url: 'http://snap.colorado.edu/index.php/Semergencyroom/getyes',
+            url: 'http://snap.colorado.edu/index.php/hospital/default/getyes',
             data: {
                 'patientId': patientId
             },
@@ -78,9 +78,7 @@
     
 </style>
     
-<h1>Patient ID# <?php echo $patientId; ?></h1>
 <br>
-<h4><i>Suspected conditions</i></h4>
 
 <div id="questions">
     <ul>

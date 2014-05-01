@@ -10,22 +10,35 @@ $this->breadcrumbs=array(
 
 <script type="text/javascript">
 
+    var patientId = null;
+
     $(function() {
         
         // BOOTSTRAP
     
-        $("#questions #start, #add-patient, #upload-photo").show();
+        $("#add-patient").show();
+        $("#image-upload").hide();
   
         // EVENT HANDLERS
         
         $('#select-patient').change(function () {
              var optionSelected = $(this).find("option:selected");
-             var valueSelected  = optionSelected.val();
-             // var textSelected   = optionSelected.text();
+             patientId = optionSelected.val();
+             // var textSelected = optionSelected.text();
              
-             // $("#questions a").hide();
+             $("input[name='patientId']").val(patientId);
              
-             getQuestionMarkedYesForPatient(valueSelected);
+             $("#questions a").hide(); // HIde all so no "left overs" from previous patient show.
+             $("#questions a").removeClass("yes") // also unmark all so can mark just for current patient.
+             
+             if(patientId != 'select') {
+                 $("#start").show(); // This should always show
+                 $("#image-upload").show();
+             } else {
+                 $("#image-upload").hide();
+             }
+             
+             getQuestionMarkedYesForPatient(patientId);
         });
  
         $("#questions a").bind("click", function() {
@@ -38,10 +51,10 @@ $this->breadcrumbs=array(
             
  		$.ajax({
                     type: "POST", 
-                    url: 'http://snap.colorado.edu/index.php/responder/Sresponder/record',
+                    url: '/index.php/responder/Sresponder/record',
                     data: {
                         'action': 'MARK-YES',
-                        'patientId': 4,
+                        'patientId': patientId,
                         'questionId': questionId
                     },
                     cache: false,
@@ -65,22 +78,28 @@ $this->breadcrumbs=array(
 
     function getQuestionMarkedYesForPatient(patientId) {
         $.ajax({ type: "GET", 
-            url: 'http://snap.colorado.edu/index.php/responder/Sresponder/getyes',
+            url: '/index.php/responder/Sresponder/getyes',
             data: {
                 'patientId': patientId
             },
             cache: false,
             async: false,
             dataType: 'json',
-            success: function(questionsMarkedYes){
+            success: function(questionsMarkedYes) {
                                 
                 $.each(questionsMarkedYes, function(i, item) {
+                    
                     var questionId = item.question_id;
-                    $("#" + questionId).show();
-                    // $("#" + questionId).parent("li").find("a").show();
-                    // $("#start")
+                    
+                    //$("#" + questionId).parent("li").find("a").show();
+
+                    // $("#" + questionId).show();
+                    $("#start, #" + questionId).parent("li").children("a").show();
+                     $("#start, #" + questionId).parent("li").children("ul").children("li").children("a").show();
                     $("#" + questionId).addClass("yes");
-                });
+                    // $("#start") 
+                    
+               });
                 
             }
         }); 
@@ -90,16 +109,16 @@ $this->breadcrumbs=array(
 
 <style type="text/css">
 
-    #questions li {
+    #patientManagement li {
         list-style: none;
         margin: 8px 0 !important;
     }
     
-    #questions ul {
+    #patientManagement ul {
         margin: 8px 0px !important;
     }
     
-    #questions a {
+    #patientManagement a {
         color: black;
         border: 1px solid #666666;
         padding: 2px 6px;
@@ -109,54 +128,73 @@ $this->breadcrumbs=array(
         display: none;
     }
     
-    #questions a:hover {
+    #patientManagement a:hover {
         color: white;
         background-color: #666666;
     }
     
-    a.yes{
+    a.yes {
         color: white !important;
         background-color: red !important;
+    }
+    
+    #start, #upload-photo {
+        display: none;
     }
     
 </style>
     
 <h1>Record Questions for Patient</h1>
 
-<div id="questions">
+<div id="patientManagement">
     
     <select id="select-patient">
-        <option> -- Select Patient -- </option>
+        <option value="select"> -- Select Patient -- </option>
 
         <?php
-            
+
             $patientModel = new Spatient;
 
             $patients = $patientModel->getPatients();
-        
+
             foreach($patients as $patient) {
-                
+
                 $id = $patient['id'];
                 $first = $patient['first'];
                 $last = $patient['last'];
-                
+
                 echo "<option value=\"$id\">$first $last</option>\n";
 
             }
             print_r($patients);
-            
-        ?>
-        
-    </select>
-        
-    <a id="add-patient">Add Patient</a>
 
+        ?>
+
+    </select>
+
+    <a id="add-patient" href="/index.php/responder/default/create/">Add Patient</a>
+    
+    <hr />
+    
+    <div id="image-upload">
+        
+    <form action="/index.php/responder/sresponder/uploadphoto" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="patientId" value="" />
+        <input type="file" accept="image/*" capture="camera" name="file" id="file">
+        <input type="submit" name="submit" value="Upload Photo">
+    </form>
+    
     <hr />
 
-    <ul>
-        <li>
-            <a id="start">Answer Questions</a> <a id="upload-photo">Upload Photo</a>
-            <?php echo $questionTreeHtml; ?>
-        </li>
-    </ul>
+    </div>
+    
+    <div id="questions">
+
+        <ul>
+            <li>
+                <a id="start">Answer Questions</a> <a id="upload-photo">Upload Photo</a>
+                <?php echo $questionTreeHtml; ?>
+            </li>
+        </ul>
+    </div>
 </div>
